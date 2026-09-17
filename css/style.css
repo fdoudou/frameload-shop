@@ -24,7 +24,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
 
 .primary {
@@ -193,6 +193,10 @@ a {
     margin: 16px;
 }
 
+.fmld-pdg-0 {
+    padding: 0px;
+}
+
 .fmld-pdg {
     padding: 5px 5px;
 }
@@ -318,6 +322,14 @@ a {
     /* float: left; */
 }
 
+.fmld-width-90 {
+    width: 90%;
+}
+
+.fmld-width-100 {
+    width: 100%;
+}
+
 .fmld-svg {
     display: inline;
     vertical-align: middle
@@ -355,9 +367,36 @@ button,
     height: 0px;
 }
 
+.fmld-list-bullet {
+    list-style-type:circle;
+}
+
+.fmld-list-nobullet {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
 .menu {
     display: inline;
     width: 75px;
+}
+
+.fmld-height-80vh {
+    height: 80vh;
+}
+
+#home-banner {
+    height: 60vh; 
+    justify-content: center; 
+    position: relative;
+}
+
+#home-banner img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center center; border-radius: 9px;
+}
+
+#home-banner h1 {
+    height: 30px; width: 95%; top: 35%; left: 6%; transform: translateX(-6%); position: absolute; text-shadow: black 10px 0px 20px; color: white; font-size: 30px; text-overflow: ellipsis;
 }
 
 .img-thumbnail {
@@ -384,7 +423,6 @@ button,
     object-fit: cover;
     object-position: center;
     border-radius: 15px !important;
-    height: 400px;
     transition: scroll 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 
@@ -470,6 +508,28 @@ button,
 
 
 @media (min-width:768px) {
+    .fmld-width-90-l {
+        width: 90%;
+    }
+    
+    .fmld-width-100-l {
+        width: 100%;
+    }
+
+    .fmld-width-300-l {
+        width: 300px;
+    }
+    
+    .fmld-width-400-l {
+        width: 400px;
+    }
+
+    #home-banner {
+        height: 80vh; 
+        justify-content: center; 
+        position: relative;
+    }
+
     .grid-repeat {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
