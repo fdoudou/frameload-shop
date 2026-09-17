@@ -1,0 +1,196 @@
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/logo.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description"
+        content="Aloe est une web app d'e-commerce specialisée dans la vente de plante d'aloe vera. Elle a été concu avec React">
+    <script>navigator.serviceWorker.register("pwabuilder-sw.js")</script>
+    <title>Aloe</title>
+    <script defer="defer" src="js/main.js"></script>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- debut header -->
+    <header class="" style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
+        <a class="fmld-pdg-16 fmld-hide-mobile" href="/">
+            <img src="../images/assets/cart.svg" alt="" width="30px" height="30px" style="position: absolute; top: 10px; background: white; border-radius: 6px; display: inline-block; vertical-align: middle;">
+        </a>
+        <div class="flex-header fmld-pdg-left fmld-pdg-right header-container fmld-hide-mobile">
+            <span
+                class="fmld-pdg-16" style="text-transform: uppercase;"><a href="index.html">Acceuil</a>
+            </span>
+            <span
+                class="fmld-pdg-16"><a href="pages/products.html" style="text-transform: uppercase;">Produits</a>
+            </span>
+            <span
+                class="fmld-pdg-16"><a href="pages/categories.html" style="text-transform: uppercase;">Catégories</a>
+            </span>
+            <span
+                class="fmld-pdg-16"><a href="pages/account.html" style="text-transform: uppercase;">Mon compte</a>
+            </span>
+        </div>
+        <div class="">
+            <button class="btn fmld-pdg-8 c-btn fmld-zoom-out fmld-hide-nomobile"
+                style="position: absolute; top: 10px; display: inline-block;">
+                <svg class="fmld-svg"
+                    xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <span class="fmld-hide-nomobile"
+                style="position: relative; text-align: center; transform: translateX(-40%); left: 40%; vertical-align: middle; top: 10px; background: transparent; color: transparent;">
+                <a href="/">
+                    <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo" style="background: white; border-radius: 6px;">
+                </a>
+            </span>
+            <div class=" fmld-right-"
+                style="position: absolute; right: 0px; top: 10px; display: inline-block; width: 100px;">
+                <button
+                    class="fmld-pdg-8 btn c-btn btn fmld-zoom-out">
+                    <svg class="fmld-svg"
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <button class="fmld-pdg-8 btn c-btn fmld-zoom-out">
+                    <svg class="fmld-svg"
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="10" cy="20.5" r="1"></circle>
+                        <circle cx="18" cy="20.5" r="1"></circle>
+                        <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
+                    </svg>
+                    <span style="background: var(--accent); border-radius: 18px; color: white; padding: 3px 5px; font-size: 10px;">3</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- nav panel -->
+    <nav class="modal-parent" id="c-modal-popup">
+        <div class="modal-underlay"></div>
+        <!-- navigation -->
+        <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
+            <span
+                class="fmld-pdg-16"><a class="nav-btn-mobile" href="/">Acceuil</a></span>
+            <span class="fmld-pdg-16"><a
+                    class="nav-btn-mobile" href="/category/plantes-interieurs">Produits</a></span>
+            <span
+                class="fmld-pdg-16"><a class="nav-btn-mobile" href="/category/plantes-exterieurs">Catégories</a></span>
+            <span class="fmld-pdg-16"><a class="nav-btn-mobile"
+                    href="/category/plantes-mixtes">Compte</a></span>
+            <span class="fmld-pdg-16"><a
+                    class="nav-btn-mobile" href="/nopage">Panier</a></span><button class=""
+                style="font-size: 18px; position: absolute; top: 16px; right: 16px; padding: 5px 8px;">×</button>
+        </div>
+    </nav>
+
+    <main id="main" class="fmld-mrg-tb">
+        <div class="container category-btn" style="margin: auto; display: flex; overflow: scroll;">
+            <button class="fmld-mrg-tb fmld-mrg-32 fmld-pdg-8" style="flex-shrink: 0;">
+                <a href="/category/plantes-mixtes">Plantes mixtes</a>
+            </button>
+            <button class="fmld-mrg-tb fmld-mrg-32 fmld-pdg-8" style="flex-shrink: 0;">
+                <a href="/category/plantes-interieurs">Plantes d'intérieur</a>
+            </button>
+            <button class="fmld-mrg-tb fmld-mrg-32 fmld-pdg-8" style="flex-shrink: 0;">
+                <a href="/category/plantes-exterieurs">Plantes d'extérieur</a>
+            </button>
+        </div>
+        <!-- produits en promotion -->
+        <section class="fmld-mrg-16 fmld-pdg-16" style="background: var(--white); color: var(--black); text-align: center;">
+            <h2>Nos produits en promotion</h2>
+            <div class="grid-repeat gap-1 fmld-pdg-8">
+                <div class="fmld-mrg-tb-">
+                    <a href="../pages/product-detail.html">
+                        <img src="../images/products/img_0220-1152x1536.jpeg" class="product-img" alt="">
+                        <p><span>aloe c</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>3500 FCFA</span></p>
+                    </a>
+                    <button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button>
+                </div>
+                <div class="fmld-mrg-tb-"><a href="../pages/product-detail.html"><img
+                            src="../images/products/img_0360-1152x1536.jpeg" class="product-img" alt="">
+                        <p><span>aloe d</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>4000 FCFA</span></p>
+                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
+                <div class="fmld-mrg-tb-"><a href="../pages/product-detail.html">
+                    <img
+                            src="../images/products/copy_4aebbcf3-3733-4505-a703-7c349a429045.jpeg" class="product-img" alt="">
+                        <p><span>aloe e</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>3500 FCFA</span></p>
+                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
+                <div class="fmld-mrg-tb-"><a href="../pages/product-detail.html"><img
+                    src="../images/products/copy_bfe592db-873a-4e55-8c49-1a8b7764c0f2.jpeg" class="product-img" alt="">
+                        <p><span>aloe f</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>3000 FCFA</span></p>
+                    </a><button class="btn fav-btn fmld-zoom-out">Retirer des favoris</button></div>
+                <div class="fmld-mrg-tb-"><a href="../pages/product-detail.html"><img
+                            src="../images/products/img_0561.jpeg" class="product-img" alt="">
+                        <p><span>aloe g</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>5500 FCFA</span></p>
+                    </a><button class="btn fav-btn fmld-zoom-out">Retirer des favoris</button></div>
+                <div class="fmld-mrg-tb-"><a href="../pages/product-detail.html"><img
+                            src="../images/products/2ea9ccf4-2689-433b-bcbb-2a005c1012db-1.jpeg" class="product-img" alt="">
+                        <p><span>aloe h</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>3500 FCFA</span></p>
+                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
+                <div class="fmld-mrg-tb-"><a href="../pages/product-detail.html"><img
+                            src="../images/products/724a218a-c403-4f24-9ea8-96eb12fb51f2-1.jpeg" class="product-img" alt="">
+                        <p><span>aloe i</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>6000 FCFA</span></p>
+                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
+                <div class="fmld-mrg-tb-"><a href="../pages/product-detail.html"><img
+                            src="../images/products/copy_27ce58d0-7865-4e79-ac67-4fc6a7f4daf3.jpeg" class="product-img" alt="">
+                        <p><span>aloe j</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>5000 FCFA</span></p>
+                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
+                <div class="fmld-mrg-tb-"><a href="../pages/product-detail.html0"><img
+                            src="../images/products//img_0269-1152x1536.jpeg" class="product-img" alt="">
+                        <p><span>aloe k</span><br> <span style="text-decoration: line-through;">9800 FCFA</span> <span>3500 FCFA</span></p>
+                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="fmld-pdg-16" style="height: ; background: var(--secondary); position: relative; bottom: 0px;">
+        <div class="grid-repeat gap-1">
+    
+            <!-- Brand -->
+            <div>
+            <a href="/">
+                <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo" style="background: white; border-radius: 6px;">
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Des sites web qui boostent votre business.</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div>
+            <h4 class="text-white font-semibold mb-3">Liens rapides</h4>
+            <ul class="space-y-2">
+                <li><a href="index.html" class="hover:text-blue-400">Accueil</a></li>
+                <li><a href="pages/products.html" class="hover:text-blue-400">Produits</a></li>
+                <li><a href="pages/categories.html" class="hover:text-blue-400">Catégories</a></li>
+                <li><a href="pages/account.html" class="hover:text-blue-400">Mon compte</a></li>
+                <li><a href="#" class="hover:text-blue-400">Panier</a></li>
+            </ul>
+            </div>
+    
+            <!-- Socials -->
+            <div>
+            <h4 class="text-white font-semibold mb-3">Connect</h4>
+            <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px" width="20px">  <a href="mailto:dev.doudou.fall@gmail.com" class="text-blue-600"> dev.doudou.fall@gmail.com</a></p>
+            <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px" width="20px"> Téléphone: <a href="tel:+221707981934" class="text-blue-600">+221 707981934</a></p>
+            <p><img class="inline-block" src="../images/assets/pin.png" alt="emoji phone" height="20px" width="20px"> Adresse: Dakar, Senegal et en remote</p>
+            </div>
+        </div>
+    
+        <div class="text-center text-gray-500 mt-8 text-sm">
+            © 2026 doudou. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
