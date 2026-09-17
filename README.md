@@ -10,7 +10,7 @@ Ce repo contient le code de la plateforme e-commerce responsive réalisée avec 
 
 - [Objectif](#objectif)
 - [Fonctionnalités](#fonctionnalités)
-- [Technologies](#tech stack)
+- [Technologies](#tech-stack)
 - [Structure](#structure)
 - [Installation](#installation)
 - [Utilisation](#utilisation)
@@ -48,7 +48,7 @@ Frameload Learn.
 
 ## Structure
 
-frameload-shop/
+```frameload-shop/
 │
 ├── index.html
 │
@@ -82,7 +82,7 @@ frameload-shop/
 │
 ├── README.md
 │
-└── .gitignore
+└── .gitignore```
 
 ## Installation
 
