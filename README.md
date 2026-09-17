@@ -82,7 +82,9 @@ Frameload Learn.
 │
 ├── README.md
 │
-└── .gitignore```
+└── .gitignore
+```
+
 
 ## Installation
 
