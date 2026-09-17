@@ -5,7 +5,7 @@ Ce repo contient le code de la plateforme e-commerce responsive réalisée avec 
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 
-## Table of Contents
+## Table des matières
 
 
 - [Objectif](#objectif)
@@ -84,7 +84,6 @@ Frameload Learn.
 │
 └── .gitignore
 ```
-
 
 ## Installation
 
