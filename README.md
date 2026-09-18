@@ -79,6 +79,8 @@ Frameload Learn.
 │ └── filters.js
 │
 ├── images/
+│ ├── products/
+│ └── assets/
 │
 ├── README.md
 │
@@ -91,7 +93,7 @@ Frameload Learn.
 Pour suivre le cours, vous aurez besoin d'installer le code en local sur votre machine. Pour cela :
 Ouvrir VS Code ou tout autre éditeur de code
 Ouvrir le Terminal
-Faites un git clone https://github.com/fdoudou/frameload-shop.git
+Faites un git clone https://github.com/fFrameload Shop/frameload-shop.git
 Faites cd frameload-shop
 Commencez à coder!
 ```
@@ -127,4 +129,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤ by [fdoudou](https://github.com/fdoudou)
+Made with ❤ by [fFrameload Shop](https://github.com/fFrameload Shop)
