@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#000000">
     <meta name="description"
-        content="Aloe est une web app d'e-commerce specialisée dans la vente de plante d'aloe vera. Elle a été concu avec React">
+        content="bijou est une web app d'e-commerce specialisée dans la vente de plante d'bijou vera. Elle a été concu avec React">
     <script>navigator.serviceWorker.register("pwabuilder-sw.js")</script>
-    <title>Aloe</title>
-    <script defer="defer" src="js/main.js"></script>
+    <title>bijou</title>
+    <script defer="defer" src="../js/main.js"></script>
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="container">
     <!-- debut header -->
     <header class="" style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
         <a class="fmld-pdg-16 fmld-hide-mobile" href="/">
@@ -34,62 +34,68 @@
             </span>
         </div>
         <div class="">
-            <button class="btn fmld-pdg-8 c-btn fmld-zoom-out fmld-hide-nomobile"
-                style="position: absolute; top: 10px; display: inline-block;">
-                <svg class="fmld-svg"
-                    xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
-            <span class="fmld-hide-nomobile"
-                style="position: relative; text-align: center; transform: translateX(-40%); left: 40%; vertical-align: middle; top: 10px; background: transparent; color: transparent;">
-                <a href="/">
-                    <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo" style="background: white; border-radius: 6px;">
-                </a>
-            </span>
-            <div class=" fmld-right-"
-                style="position: absolute; right: 0px; top: 10px; display: inline-block; width: 100px;">
-                <button
-                    class="fmld-pdg-8 btn c-btn btn fmld-zoom-out">
+                <button onclick="viewCart('#nav-modal')" class="btn fmld-pdg-8 c-btn fmld-zoom-out fmld-hide-nomobile"
+                    style="position: absolute; top: 10px; display: inline-block;">
                     <svg class="fmld-svg"
                         xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
                 </button>
-                <button class="fmld-pdg-8 btn c-btn fmld-zoom-out">
-                    <svg class="fmld-svg"
-                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="10" cy="20.5" r="1"></circle>
-                        <circle cx="18" cy="20.5" r="1"></circle>
-                        <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
-                    </svg>
-                    <span style="background: var(--accent); border-radius: 18px; color: white; padding: 3px 5px; font-size: 10px;">3</span>
-                </button>
+                <span class="fmld-hide-nomobile"
+                    style="position: relative; text-align: center; transform: translateX(-40%); left: 40%; vertical-align: middle; top: 10px; background: transparent; color: transparent;">
+                    <a href="/">
+                        <img src="images/assets/cart.svg" width="25px" height="25px" alt="app logo" style="background: white; border-radius: 6px;">
+                    </a>
+                </span>
+                <div class=" fmld-right-"
+                    style="position: absolute; right: 0px; top: 10px; display: inline-block; width: 100px;">
+                    <button onclick="viewCart('#search-modal')"
+                        class="fmld-pdg-8 btn c-btn btn fmld-zoom-out">
+                        <svg class="fmld-svg"
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button onclick="viewCart('#cart-modal')" class="fmld-pdg-8 btn c-btn fmld-zoom-out">
+                        <svg class="fmld-svg"
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="10" cy="20.5" r="1"></circle>
+                            <circle cx="18" cy="20.5" r="1"></circle>
+                            <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
+                        </svg>
+                        <span style="background: var(--accent); border-radius: 18px; color: white; padding: 3px 5px; font-size: 10px;">3</span>
+                    </button>
+                </div>
             </div>
-        </div>
     </header>
-    <!-- debut nav -->
-    <nav class="modal-parent" id="c-modal-popup">
-        <div class="modal-underlay"></div>
-        <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;"><span
-                class="fmld-pdg-16"><a class="nav-btn-mobile" href="/">Acceuil</a></span><span class="fmld-pdg-16"><a
-                    class="nav-btn-mobile" href="/category/plantes-interieurs">Plantes d'intérieur</a></span><span
-                class="fmld-pdg-16"><a class="nav-btn-mobile" href="/category/plantes-exterieurs">Plantes
-                    d'extérieur</a></span><span class="fmld-pdg-16"><a class="nav-btn-mobile"
-                    href="/category/plantes-mixtes">Plantes mixtes</a></span><span class="fmld-pdg-16"><a
-                    class="nav-btn-mobile" href="/nopage">Page d'erreur</a></span><button class=""
-                style="font-size: 18px; position: absolute; top: 16px; right: 16px; padding: 5px 8px;">×</button>
+    <!-- nav panel -->
+    <nav class="modal-parent" id="nav-modal">
+        <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
+        <!-- navigation -->
+        <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
+            <span
+                class="fmld-pdg-16"><a class="nav-btn-mobile" href="/">Acceuil</a></span>
+            <span class="fmld-pdg-16"><a
+                    class="nav-btn-mobile" href="/category/plantes-interieurs">Produits</a></span>
+            <span
+                class="fmld-pdg-16"><a class="nav-btn-mobile" href="/category/plantes-exterieurs">Catégories</a></span>
+            <span class="fmld-pdg-16"><a class="nav-btn-mobile"
+                    href="/category/plantes-mixtes">Compte</a></span>
+            <span class="fmld-pdg-16"><a
+                    class="nav-btn-mobile" href="/nopage">Panier</a></span>
+            <button onclick="viewCart('#nav-modal')" class="fmld-large fmld-bold"
+                style="position: absolute; top: 16px; right: 16px; padding: 5px 8px;">×</button>
         </div>
     </nav>
     <!-- debut main -->
     <main id="main" class="fmld-mrg-tb">
-        <div class="grid-c-half gap-2 fmld-mrg container-">
+        <div class="grid-c-half gap-2 grid-center fmld-mrg">
             <div class="">
                 <div id="slide-container" class="">
                     <div class="slider"><img class="slider-img"
@@ -118,22 +124,23 @@
             </div>
             <div class=" fmld-pdg-16">
                 <div>
-                    <div>
-                        <div class="fmld-mrg-tb" style="font-size: 32px;">aloe g</div>
-                        <div class="fmld-mrg-tb" style="font-size: 20px;">5500 FCFA</div>
-                    </div>
+                    <div class="fmld-mrg-tb" style="font-size: 32px;">bijou g</div>
+                    <div class="fmld-mrg-tb" style="font-size: 20px;">5500 FCFA</div>
                     <div>
                         <p>Quantité disponible: 40</p>
                         <p>Dimensions: 18*35*21</p>
                     </div>
                 </div>
                 <div class="grid-c-1">
-                    <div class="fmld-mrg-tb"><button class="btn fmld-pdg-16">-</button><input class="fmld-pdg-16" min="1"
-                            type="number" value="1" style="width: 30px; border: none; text-align: center;"><button
-                            class="btn fmld-pdg-16">+</button></div><button
-                        class="btn fav-btn fmld-pdg-16 fmld-zoom-out">Retirer des favoris</button>
+                    <div class="fmld-mrg-tb">
+                        <span>Quantité:</span>
+                        <button class="btn fmld-pdg-16">-</button>
+                        <input class="fmld-pdg-16" min="1" type="number" value="1" style="width: 75px; border: none; text-align: center;">
+                        <button class="btn fmld-pdg-16">+</button>
+                    </div>
+                    <button class="btn fav-btn fmld-pdg-16 fmld-zoom-out">Ajouter au panier</button>
                 </div>
-                <div class="">
+                <div class="fmld-pdg-top fmld-mrg-tb">
                     <h3>Caractéristiques</h3>
                     <ul class="fmld-bullet-list fmld-pdg-left">
                         <li class="">caractéristique</li>
@@ -142,7 +149,7 @@
                         <li class="">caractéristique</li>
                     </ul>
                 </div>
-                <details class="fmld-mrg-tb" open="">
+                <details class="fmld-pdg-top fmld-mrg-tb" open>
                     <summary>
                         <h3>Description</h3>
                     </summary>
@@ -175,20 +182,28 @@
                     </svg></button></p>
             </div>
         </div>
-        <div>
-            <div class="modal-parent" id="z-modal-popup">
-                <div class="modal-underlay"></div>
+
+        <!-- modals -->
+        <aside>
+            <div class="modal-parent" id="cart-modal">
+                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
                 <div class="fmld-modal fmld-anim-right">
-                    <h4 style="position: relative;"><span class="" style="font-size: 18px; font-weight: bold;">Mes
-                            favoris<span
-                                style="background: teal; border-radius: 20px; color: white; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span></span><button
-                            style="font-size: 18px; position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
+                    <h4 style="position: relative;">
+                        <span class="" style="font-size: 18px; font-weight: bold;">
+                            Mes favoris
+                            <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
+                        </span>
+                        <button onclick="viewCart('#cart-modal')" class="fmld-large fmld-bold" style="position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
                     <div>
                         <div style="overflow-y: scroll;">
-                            <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/6"><img
-                                        src="/static/media/aloe-7_upscaled.762e375450dfd3c509d8.png" alt=""
-                                        style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/6">aloe g</a>
+                            <div class="grid-c-2 grid-m-2 gap-1" style="height: 150px;">
+                                <a href="./product/6">
+                                    <img src="images/products/img_0218-1152x1536.jpeg" alt=""
+                                        style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;">
+                                </a>
+                                <div>
+                                    <span class="fmld-mrg-tb" style="font-size: 16px;">
+                                        <a href="./product/6">bijou g</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">5500 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -198,9 +213,9 @@
                                 </div>
                             </div>
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/5"><img
-                                        src="/static/media/aloe-6_upscaled.649f279b0c0244368e64.png" alt=""
+                                        src="images/products/img_0412-1152x1536.jpeg" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">aloe f</a>
+                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">bijou f</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">3000 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -210,9 +225,9 @@
                                 </div>
                             </div>
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/1"><img
-                                        src="/static/media/aloe-2_upscaled.db4cef299f678d607aaf.png" alt=""
+                                        src="images/products/img_0360-1152x1536.jpeg" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">aloe b</a>
+                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">bijou b</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">9800 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -222,16 +237,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="b-btn"><a href="/checkout"><button
+                        <div class="b-btn"><a href="./pages/cart.html">
+                            <button
                                     class="btn fmld-mrg-tb fmld-pdg-16 fmld-zoom-out">Acheter maintenant</button></a></div>
                     </div>
                 </div>
             </div>
-            <div class="modal-parent" id="x-modal-popup">
-                <div class="modal-underlay"></div>
+            <div class="modal-parent" id="search-modal">
+                <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
                 <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">
-                    <h4><span class="" style="font-size: 18px; font-weight: bold;">Rechercher quelquechose</span><button
-                            style="font-size: 18px; position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
+                    <h4>
+                        <span class="fmld-large fmld-bold" style="font-size: 18px; font-weight: bold;">Rechercher quelquechose</span>
+                        <button onclick="viewCart('#search-modal')" class="fmld-large fmld-bold" style="position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
                     <input class="fmld-pdg-8 fmld-mrg" type="search" placeholder="Tapez ici pour rechercher" value=""
                         style="height: 45px; width: 250px; border: 1px solid rgb(221, 221, 221); border-radius: 9px;">
                     <div class="fmld-mrg-16">
@@ -239,7 +256,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </aside>
     </main>    
     <!-- footer -->
     <footer class="fmld-pdg-16" style="height: ; background: var(--secondary); position: relative; bottom: 0px;">
@@ -267,15 +284,15 @@
     
             <!-- Socials -->
             <div>
-            <h4 class="">Connect</h4>
-            <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px" width="20px">  <a href="mailto:contact@frameloadshop.com" class="text-blue-600"> contact@frameloadshop.com</a></p>
-            <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px" width="20px"> Téléphone: <a href="tel:+221707981934" class="text-blue-600">+0123456789</a></p>
+            <h4 class="">Contacts</h4>
+            <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px" width="20px">  <a href="mailto:contact@frameloadshop.com" class=""> contact@frameloadshop.com</a></p>
+            <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px" width="20px"> Téléphone: <a href="tel:+221707981934" class="">+0123456789</a></p>
             <p><img class="inline-block" src="../images/assets/pin.png" alt="emoji phone" height="20px" width="20px"> Adresse: Dakar, Senegal</p>
             </div>
         </div>
     
-        <div class="text-center text-gray-500 mt-8 text-sm">
-            © 2026 doudou. All rights reserved.
+        <div class="fmld-center ">
+            © 2026 Frameload Shop. All rights reserved.
         </div>
     </footer>
 </body>

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#000000">
     <meta name="description"
-        content="Aloe est une web app d'e-commerce specialisée dans la vente de plante d'aloe vera. Elle a été concu avec React">
+        content="bijou est une web app d'e-commerce specialisée dans la vente de plante d'bijou vera. Elle a été concu avec React">
     <title>Frameload Shop - Acceuil</title>
-    <script defer="defer" src="../js/main.14eacec0.js"></script>
+    <script defer="defer" src="../js/main.js"></script>
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="container">
     <div id="root">
         <!-- debut header -->
         <header class="" style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
@@ -74,17 +74,23 @@
                 </div>
             </div>
         </header>
-        <!-- debut nav -->
-        <nav class="modal-parent" id="c-modal-popup">
-            <div class="modal-underlay"></div>
-            <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;"><span
-                    class="fmld-pdg-16"><a class="nav-btn-mobile" href="/">Acceuil</a></span><span class="fmld-pdg-16"><a
-                        class="nav-btn-mobile" href="/category/plantes-interieurs">Plantes d'intérieur</a></span><span
-                    class="fmld-pdg-16"><a class="nav-btn-mobile" href="/category/plantes-exterieurs">Plantes
-                        d'extérieur</a></span><span class="fmld-pdg-16"><a class="nav-btn-mobile"
-                        href="/category/plantes-mixtes">Plantes mixtes</a></span><span class="fmld-pdg-16"><a
-                        class="nav-btn-mobile" href="/nopage">Page d'erreur</a></span><button class=""
-                    style="font-size: 18px; position: absolute; top: 16px; right: 16px; padding: 5px 8px;">×</button>
+        <!-- nav panel -->
+        <nav class="modal-parent" id="nav-modal">
+            <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
+            <!-- navigation -->
+            <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
+                <span
+                    class="fmld-pdg-16"><a class="nav-btn-mobile" href="/">Acceuil</a></span>
+                <span class="fmld-pdg-16"><a
+                        class="nav-btn-mobile" href="/category/plantes-interieurs">Produits</a></span>
+                <span
+                    class="fmld-pdg-16"><a class="nav-btn-mobile" href="/category/plantes-exterieurs">Catégories</a></span>
+                <span class="fmld-pdg-16"><a class="nav-btn-mobile"
+                        href="/category/plantes-mixtes">Compte</a></span>
+                <span class="fmld-pdg-16"><a
+                        class="nav-btn-mobile" href="/nopage">Panier</a></span>
+                <button onclick="viewCart('#nav-modal')" class="fmld-large fmld-bold"
+                    style="position: absolute; top: 16px; right: 16px; padding: 5px 8px;">×</button>
             </div>
         </nav>
         <h2 class="fmld-mrg-tb fmld-pdg-16" style="font-size: 22px;">Réglez vos achats</h2>
@@ -95,7 +101,7 @@
                                 src="../images/products/img_0218-1152x1536.jpeg"
                                 style="width: 115px; height: 115px; object-fit: cover;"></a>
                         <div>
-                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/6">aloe g</a> <button
+                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/6">bijou g</a> <button
                                     style="position: relative; right: 16px;">supprimer ×</button></div>
                             <div class="fmld-mrg-tb" style="font-size: 18px;">5500 FCFA</div>
                             <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8" min="1"
@@ -107,7 +113,7 @@
                                 src="../images/products/img_0220-1152x1536.jpeg"
                                 style="width: 115px; height: 115px; object-fit: cover;"></a>
                         <div>
-                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">aloe f</a> <button
+                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">bijou f</a> <button
                                     style="position: relative; right: 16px;">supprimer ×</button></div>
                             <div class="fmld-mrg-tb" style="font-size: 18px;">3000 FCFA</div>
                             <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8" min="1"
@@ -119,7 +125,7 @@
                                 src="../images/products/img_0269-1152x1536.jpeg"
                                 style="width: 115px; height: 115px; object-fit: cover;"></a>
                         <div>
-                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">aloe b</a> <button
+                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">bijou b</a> <button
                                     style="position: relative; right: 16px;">supprimer ×</button></div>
                             <div class="fmld-mrg-tb" style="font-size: 18px;">9800 FCFA</div>
                             <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8" min="1"
@@ -162,9 +168,9 @@
                     <div>
                         <div style="overflow-y: scroll;">
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/6"><img
-                                        src="/static/media/aloe-7_upscaled.762e375450dfd3c509d8.png" alt=""
+                                        src="/static/media/bijou-7_upscaled.762e375450dfd3c509d8.png" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/6">aloe g</a>
+                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/6">bijou g</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">5500 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -174,9 +180,9 @@
                                 </div>
                             </div>
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/5"><img
-                                        src="/static/media/aloe-6_upscaled.649f279b0c0244368e64.png" alt=""
+                                        src="/static/media/bijou-6_upscaled.649f279b0c0244368e64.png" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">aloe f</a>
+                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">bijou f</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">3000 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -186,9 +192,9 @@
                                 </div>
                             </div>
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/1"><img
-                                        src="/static/media/aloe-2_upscaled.db4cef299f678d607aaf.png" alt=""
+                                        src="/static/media/bijou-2_upscaled.db4cef299f678d607aaf.png" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">aloe b</a>
+                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">bijou b</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">9800 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -242,15 +248,15 @@
         
                 <!-- Socials -->
                 <div>
-                <h4 class="">Connect</h4>
-                <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px" width="20px">  <a href="mailto:contact@frameloadshop.com" class="text-blue-600"> contact@frameloadshop.com</a></p>
-                <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px" width="20px"> Téléphone: <a href="tel:+221707981934" class="text-blue-600">+0123456789</a></p>
+                <h4 class="">Contacts</h4>
+                <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px" width="20px">  <a href="mailto:contact@frameloadshop.com" class=""> contact@frameloadshop.com</a></p>
+                <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px" width="20px"> Téléphone: <a href="tel:+221707981934" class="">+0123456789</a></p>
                 <p><img class="inline-block" src="../images/assets/pin.png" alt="emoji phone" height="20px" width="20px"> Adresse: Dakar, Senegal</p>
                 </div>
             </div>
         
-            <div class="text-center text-gray-500 mt-8 text-sm">
-                © 2026 doudou. All rights reserved.
+            <div class="fmld-center ">
+                © 2026 Frameload Shop. All rights reserved.
             </div>
         </footer>
     </div>
