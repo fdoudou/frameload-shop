@@ -466,7 +466,7 @@ button,
 }
 
 #home-banner h1 {
-    height: 30px; width: 95%; top: 35%; left: 6%; transform: translateX(-6%); position: absolute; text-shadow: black 10px 0px 20px; color: white; font-size: 30px; text-overflow: ellipsis;
+    height: 30px; top: 35%;position: absolute; text-shadow: black 10px 0px 20px; color: white; font-size: 30px; text-overflow: ellipsis;
 }
 
 .img-thumbnail {
@@ -515,6 +515,25 @@ button,
     -webkit-overflow-scrolling: touch;
 }
 
+.flex {
+    display: flex
+}
+
+.items-start {
+    align-items: flex-start
+}
+
+.items-center {
+    align-items: center
+}
+
+.justify-center {
+    justify-content: center
+}
+
+.justify-between {
+    justify-content: space-between
+}
 
 [class*='grid-c'],
 [class*='grid-m'],
