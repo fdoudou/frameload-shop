@@ -84,6 +84,11 @@ body {
     text-align: center;
 }
 
+
+.fmld-justify {
+    text-align: justify;
+}
+
 .fmld-hide {
     display: none;
 }
