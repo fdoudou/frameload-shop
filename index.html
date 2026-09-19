@@ -20,11 +20,11 @@
 
 <body class="container">
         <!-- debut header -->
-        <header class="" style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
-            <a class="fmld-pdg-16 fmld-hide-mobile" href="/">
-                <img src="images/assets/cart.svg" alt="" width="30px" height="30px" style="position: absolute; top: 10px; background: var(--white); border-radius: 6px; display: inline-block; vertical-align: middle;">
+        <header class="flex items-center justify-between" style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
+            <a style="border-radius: 6px" class="fmld-mrg-left fmld-hide-mobile white flex items-start fmld-pdg" href="./">
+                <img src="images/assets/cart.svg" alt="" width="30px" height="30px">
             </a>
-            <div class="flex-header fmld-pdg-left fmld-pdg-right header-container fmld-hide-mobile">
+            <div class="flex items-center justify-center fmld-pdg-left fmld-pdg-right header-container fmld-hide-mobile">
                 <span
                     class="fmld-pdg-16 fmld-zoom-out fmld-upper" ><a href="index.html">Acceuil</a>
                 </span>
@@ -49,12 +49,10 @@
                         <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
                 </button>
-                <span class="fmld-hide-nomobile"
-                    style="position: relative; text-align: center; transform: translateX(-40%); left: 40%; vertical-align: middle; top: 10px; background: transparent; color: transparent;">
-                    <a href="/">
-                        <img src="images/assets/cart.svg" width="25px" height="25px" alt="app logo" style="background: white; border-radius: 6px;">
-                    </a>
-                </span>
+                <a class="fmld-hide-nomobile white flex items-center justify-center fmld-pdg" style="border-radius: 6px" href="/">
+                    <img src="images/assets/cart.svg" width="25px" height="25px" alt="app logo" style="background: white; border-radius: 6px;">
+                </a>
+                
                 <div class=" fmld-right-"
                     style="position: absolute; right: 0px; top: 10px; display: inline-block; width: 100px;">
                     <button onclick="viewCart('#search-modal')"
@@ -104,7 +102,7 @@
             <!-- bannière principale -->
             <section id="home-banner" class="fmld-mrg-16">
                 <img src="images/products/img_0218-1152x1536.jpeg" alt="">
-                <h1 class="fmld-mrg-32">
+                <h1 class="fmld-pdg-left fmld-pdg-right flex fmld-center items-center justify-center fmld-pdg fmld-width-90-fmld-width-400-l">
                     Bienvenu sur Frameload Shop! Ici, vous trouverez une large selection de bijoux et d’accessoires!</h1>
             </section>
 
