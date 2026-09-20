@@ -78,39 +78,36 @@
                 </div>
             </div>
     </header><!-- nav panel -->
-    <nav class="modal-parent" id="nav-modal">
-        <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
-        <!-- navigation -->
-        <div class="fmld-modal overlay-content fmld-anim-left fmld-pdg-top" style="right: auto; left: 0%;">
-            <span
-                class="fmld-pdg-16"><a class="nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a></span>
-            <span class="fmld-pdg-16"><a
-                    class="nav-btn-mobile fmld-xlarge" href="./products.html">Produits</a></span>
-            <span
-                class="fmld-pdg-16"><a class="nav-btn-mobile fmld-xlarge" href="./categories.html">Catégories</a></span>
-            <span class="fmld-pdg-16"><a class="nav-btn-mobile fmld-xlarge"
-                    href="./account.html">Compte</a></span>
-            <span class="fmld-pdg-16"><a
-                    class="nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a></span>
-            <button onclick="viewCart('#nav-modal')" class="fmld-large fmld-bold"
-                style="position: absolute; top: 16px; right: 16px; padding: 5px 8px;">×</button>
-        </div>
-    </nav>
+        <nav class="modal-parent" id="nav-modal">
+            <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
+            <!-- navigation -->
+            <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
+                <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/products.html">Produits</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/categories.html">Catégories</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/account.html">Compte</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/cart.html">Panier</a>
+                </div>
+                
+                <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right" style="position: absolute; top: 16px; right: 16px;">×</button>
+            </div>
+        </nav>
     <!-- debut main -->
     <main id="main" class="fmld-mrg-tb">
         <div class="fmld-height-80vh">
             <h1 class="fmld-center text-center">Créer un compte</h1>
-            <form class="fmld-center dz-w-90-m dz-w-350-l">
+            <form class="fmld-center fmld-w-90-m fmld-w-350-l">
                 <div class="fmld-pdg-top fmld-pdg-bottom fmld-width-100">
-                    <label for="username" class="form-label dz-medium fmld-pdg-top fmld-left">Nom d'utilisateur (adresse email)</label>
-                    <div class="dz-w-90">
+                    <label for="username" class="form-label fmld-medium fmld-pdg-top fmld-left">Nom d'utilisateur (adresse email)</label>
+                    <div class="fmld-w-90">
                         <input type="email" class="border-gray fmld-width-90 fmld-width-300-l fmld-pdg-8" id="username" required>
                         <div class="invalid-feedback fmld-small fmld-pdg">L'adresse email de votre compte.</div>
                     </div>
                 </div>
                 <div class="fmld-pdg-bottom fmld-width-100">
-                    <label for="password" class="form-label dz-medium fmld-pdg-8 fmld-left">Mot de passe</label>
-                    <div class="dz-w-90">
+                    <label for="password" class="form-label fmld-medium fmld-pdg-8 fmld-left">Mot de passe</label>
+                    <div class="fmld-w-90">
                         <input minlength="6" type="password"
                             class="border-gray fmld-width-90 fmld-width-300-l fmld-pdg-8"
                             id="password" required>
@@ -119,8 +116,8 @@
                 </div>
                 <div class="fmld-pdg-bottom fmld-width-100">
                     <label for="phonenumber"
-                        class="form-label dz-medium fmld-pdg-bottom fmld-left">Numéro de téléphone</label>
-                    <div class="dz-w-90">
+                        class="form-label fmld-medium fmld-pdg-bottom fmld-left">Numéro de téléphone</label>
+                    <div class="fmld-w-90">
                         <input minlength="9" maxlength="9"
                             pattern="^\d+$" type="tel" inputmode="numeric"
                             class="border-gray fmld-width-90 fmld-width-300-l fmld-pdg-8"
@@ -128,11 +125,11 @@
                         <div class="invalid-feedback fmld-small fmld-pdg">Doit contenir exatement 9 chiffres.</div>
                     </div>
                 </div>
-                <div class="dz-w-100 fmld-pdg-bottom">
+                <div class="fmld-w-100 fmld-pdg-bottom">
                     <button class="fmld-width-100 fmld-width-300-l btn fav-btn fmld-pdg-16 fmld-zoom-out"
                         type="submit">S'inscrire</button>
                     </div>
-                <div class="dz-w-100 fmld-pdg-bottom">
+                <div class="fmld-w-100 fmld-pdg-bottom">
                     <p>Vous avez déjà un compte? <a class="text-primary" href="./login.html">Connectez-vous</a> </p>
                 </div>
             </form>
@@ -199,18 +196,19 @@
                 </div>
             </div>
             <div class="modal-parent" id="search-modal">
-                <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
-                <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">
-                    <h4>
-                        <span class="fmld-large fmld-bold" style="font-size: 18px; font-weight: bold;">Rechercher quelquechose</span>
-                        <button onclick="viewCart('#search-modal')" class="fmld-large fmld-bold" style="position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
-                    <input class="fmld-pdg-8 fmld-mrg" type="search" placeholder="Tapez ici pour rechercher" value=""
-                        style="height: 45px; width: 250px; border: 1px solid rgb(221, 221, 221); border-radius: 9px;">
-                    <div class="fmld-mrg-16">
-                        <h2 class="fmld-mrg-bottom fmld-pdg-16">Vos resultats de recherches s'afficheront ici!</h2>
+                    <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
+                    <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">
+                        <h4 class="flex items-center justify-between gap-1">
+                            <span class="fmld-large fmld-bold">Rechercher quelquechose</span>
+                            <button onclick="viewCart('#search-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                        </h4>
+                        <input class="fmld-width-100 fmld-pdg-8 fmld-mrg-right  border-gray" type="search" placeholder="Tapez ici pour rechercher" value=""
+                            style="height: 45px;">
+                        <div class="fmld-mrg-16">
+                            <h2 class="fmld-mrg-bottom fmld-pdg-8">Vos resultats de recherches s'afficheront ici!</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
         </aside>
     </main>
     <!-- footer -->

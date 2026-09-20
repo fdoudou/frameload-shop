@@ -84,18 +84,15 @@
             <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
             <!-- navigation -->
             <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
-                <span
-                    class="fmld-pdg-16"><a class="nav-btn-mobile fmld-xlarge" href="./">Acceuil</a></span>
-                <span class="fmld-pdg-16"><a
-                        class="nav-btn-mobile fmld-xlarge" href="./pages/products.html">Produits</a></span>
-                <span
-                    class="fmld-pdg-16"><a class="nav-btn-mobile fmld-xlarge" href="./pages/categories.html">Catégories</a></span>
-                <span class="fmld-pdg-16"><a class="nav-btn-mobile fmld-xlarge"
-                        href="./pages/account.html">Compte</a></span>
-                <span class="fmld-pdg-16"><a
-                        class="nav-btn-mobile fmld-xlarge" href="./pages/cart.html">Panier</a></span>
-                <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right"
-                    style="position: absolute; top: 16px; right: 16px;">×</button>
+                <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./">Acceuil</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/products.html">Produits</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/categories.html">Catégories</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/account.html">Compte</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/cart.html">Panier</a>
+                </div>
+                
+                <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right" style="position: absolute; top: 16px; right: 16px;">×</button>
             </div>
         </nav>
         <!-- fin header -->
@@ -356,7 +353,7 @@
                         </div>
                         <div class="flex items-center justify-between gap-1">
                             <a href="./pages/cart.html">
-                                <button class="btn fmld-pdg-16 fmld-zoom-out">Consulterr mon panier</button>
+                                <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
                             </a>
                             <a href="./pages/checkout.html">
                                 <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
