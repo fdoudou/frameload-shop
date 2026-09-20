@@ -73,21 +73,21 @@
         </div>
     </header>
     <!-- nav panel -->
-        <nav class="modal-parent" id="nav-modal">
-            <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
-            <!-- navigation -->
-            <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
-                <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/products.html">Produits</a>
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/categories.html">Catégories</a>
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/account.html">Compte</a>
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./pages/cart.html">Panier</a>
-                </div>
-                
-                <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right" style="position: absolute; top: 16px; right: 16px;">×</button>
+    <nav class="modal-parent" id="nav-modal">
+        <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
+        <!-- navigation -->
+        <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
+            <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./products.html">Produits</a>
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./categories.html">Catégories</a>
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./account.html">Compte</a>
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
             </div>
-        </nav>
+            
+            <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right" style="position: absolute; top: 16px; right: 16px;">×</button>
+        </div>
+    </nav>
     <main id="main" class="fmld-mrg-tb">
         <div class="fmld-center fmld-height-80vh">
             <h1 class="text-center">Connexion</h1>
@@ -118,24 +118,24 @@
         <!-- modals -->
         <aside>
             <div class="modal-parent" id="cart-modal">
-                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
-                <div class="fmld-modal fmld-anim-right">
-                    <h4 style="position: relative;">
-                        <span class="" style="font-size: 18px; font-weight: bold;">
-                            Mes favoris
-                            <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
-                        </span>
-                        <button onclick="viewCart('#cart-modal')" class="fmld-large fmld-bold" style="position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
-                    <div>
+                    <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
+                    <div class="fmld-modal fmld-anim-right">
+                        <h4 class="flex items-center justify-between gap-1">
+                            <span class="fmld-large fmld-bold">
+                                Mon panier
+                                <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
+                            </span>
+                            <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                        </h4>
                         <div style="overflow-y: scroll;">
                             <div class="grid-c-2 grid-m-2 gap-1" style="height: 150px;">
-                                <a href="./product/6">
+                                <a href="./pages/product-detail.html">
                                     <img src="images/products/img_0218-1152x1536.jpeg" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;">
                                 </a>
                                 <div>
                                     <span class="fmld-mrg-tb" style="font-size: 16px;">
-                                        <a href="./product/6">bijou g</a>
+                                        <a href="./pages/product-detail.html">bijou g</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">5500 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -156,10 +156,10 @@
                                             class="fmld-pdg-8">+</button></div>
                                 </div>
                             </div>
-                            <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/1"><img
+                            <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="pages/product-detail.html"><img
                                         src="images/products/img_0360-1152x1536.jpeg" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">bijou b</a>
+                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="pages/product-detail.html">bijou b</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">9800 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -169,12 +169,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="b-btn"><a href="./pages/cart.html">
-                            <button
-                                    class="btn fmld-mrg-tb fmld-pdg-16 fmld-zoom-out">Acheter maintenant</button></a></div>
+                        <div class="flex items-center justify-between gap-1">
+                            <a href="./pages/cart.html">
+                                <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
+                            </a>
+                            <a href="./pages/checkout.html">
+                                <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
             <div class="modal-parent" id="search-modal">
                     <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
                     <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">
