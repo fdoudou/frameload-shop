@@ -451,6 +451,10 @@ button,
     font-size: 22px;
 }
 
+.fmld-xxlarge {
+    font-size: 28px;
+}
+
 .fmld-height-80vh {
     height: 80vh;
 }
