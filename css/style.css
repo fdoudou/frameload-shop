@@ -492,7 +492,7 @@ button,
     height: 285px;
     object-fit: cover;
     object-position: center;
-    border-radius: 15px !important;
+    border-radius: 9px !important;
     transition: scroll 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     display: flex;
     overflow-x: scroll;
@@ -506,7 +506,7 @@ button,
     height: 125px;
     object-fit: cover;
     object-position: center;
-    border-radius: 15px !important;
+    border-radius: 9px !important;
     transition: scroll 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     display: flex;
     overflow-x: scroll;
