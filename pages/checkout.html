@@ -8,20 +8,19 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../images/assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="../images/assets/icon-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="../images/assets/icon-512x512.png">
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#000000">
     <meta name="description"
         content="bijou est une web app d'e-commerce specialisée dans la vente de plante d'bijou vera. Elle a été concu avec React">
-    <script>navigator.serviceWorker.register("pwabuilder-sw.js")</script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="manifest" href="/manifest.json">
-    <title>bijou</title>
-    <script defer="defer" src="/static/js/main.js"></script>
-    <link href="/static/css/main.2fbb5c25.css" rel="stylesheet">
+    <title>Frameload Shop - Acceuil</title>
+    <script defer="defer" src="../js/main.js"></script>
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body class="container">
     <div id="root">
+        <!-- debut header -->
         <header class="flex items-center justify-between"
             style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
             <a style="border-radius: 45px" class="fmld-mrg-left fmld-hide-mobile white flex items-start fmld-pdg"
@@ -78,129 +77,164 @@
                 </button>
             </div>
         </header>
+        <!-- nav panel -->
         <nav class="modal-parent" id="nav-modal">
-        <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
-        <!-- navigation -->
-        <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
-            <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./products.html">Produits</a>
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./categories.html">Catégories</a>
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./account.html">Compte</a>
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
+            <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
+            <!-- navigation -->
+            <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
+                <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./products.html">Produits</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./categories.html">Catégories</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./account.html">Compte</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
+                </div>
+
+                <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right"
+                    style="position: absolute; top: 16px; right: 16px;">×</button>
             </div>
+        </nav>
+
+        <h1 class="fmld-mrg-tb fmld-pdg-16 fmld-xlarge">Passer ma commander</h1>
+        <div class="grid-c-half gap-2 justify-center fmld-mrg fmld-mrg-tb fmld-pdg-bottom">
+            <form id="checkoutform" class="fmld-center- fmld-w-90-m fmld-w-350-l-">
+                <div class="fmld-pdg-top fmld-pdg-bottom fmld-width-100">
+                    <label for="lastname" class="form-label fmld-small fmld-pdg-8 fmld-left">Nom </label>
+                    <div class="fmld-width-100 fmld-mrg-top">
+                        <input type="text" class="border-light fmld-width-100 fmld-width-300-l- fmld-pdg-8" id="lastname" required>
+                        <div class="invalid-feedback fmld-small fmld-pdg">Votre nom.</div>
+                    </div>
+                </div>
+                <div class="fmld-pdg-bottom fmld-width-100">
+                    <label for="firstname" class="form-label fmld-small fmld-pdg-8 fmld-left">Prénom</label>
+                    <div class="fmld-width-100 fmld-mrg-top">
+                        <input minlength="6" type="text"
+                            class="border-light fmld-width-100 fmld-width-300-l- fmld-pdg-8"
+                            id="firstname" required>
+                        <div class="invalid-feedback fmld-small fmld-pdg">Votre prénom.</div>
+                    </div>
+                </div>
+                <div class="fmld-pdg-bottom fmld-width-100">
+                    <label for="email" class="form-label fmld-small fmld-pdg-top fmld-left">Email</label>
+                    <div class="fmld-width-100 fmld-mrg-top">
+                        <input type="email" class="border-light fmld-width-100 fmld-width-300-l- fmld-pdg-8" id="email" required>
+                        <div class="invalid-feedback fmld-small fmld-pdg">L'adresse email de votre compte.</div>
+                    </div>
+                </div>
+                <div class="fmld-pdg-bottom fmld-width-100">
+                    <label for="phonenumber"
+                        class="form-label fmld-small fmld-pdg-bottom fmld-left">Numéro de téléphone</label>
+                    <div class="fmld-width-100 fmld-mrg-top">
+                        <input minlength="9" maxlength="9"
+                            pattern="^\d+$" type="tel" inputmode="numeric"
+                            class="border-light fmld-width-100 fmld-width-300-l- fmld-pdg-8"
+                            id="phonenumber" required>
+                        <div class="invalid-feedback fmld-small fmld-pdg">Doit contenir exatement 9 chiffres.</div>
+                    </div>
+                </div>
+                <div class="fmld-pdg-bottom fmld-width-100">
+                    <label for="phonenumber"
+                        class="form-label fmld-small fmld-pdg-bottom fmld-left">Adresse </label>
+                    <div class="fmld-width-100 fmld-mrg-top">
+                        <select class="border-light fmld-width-100 fmld-width-300-l- fmld-pdg-8" id="countrycode" required>
+                            <option value="Ville 1">Ville 1</option>
+                            <option value="Ville 2">Ville 2</option>
+                            <option value="Ville 3">Ville 3</option>
+                            <option value="Ville 3">Ville 3</option>
+                            <option value="Ville 4">Ville 4</option>
+                        </select>
+                        <div class="invalid-feedback fmld-small fmld-pdg">Doit contenir exatement 9 chiffres.</div>
+                    </div>
+                </div>
+            </form>
             
-            <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right" style="position: absolute; top: 16px; right: 16px;">×</button>
-        </div>
-    </nav>
-        <div class="fmld-mrg-tb">
-            <div class="container fmld-mrg-32" style="height: 430px; justify-content: center; position: relative;"><img
-                    src="/static/media/bijou_upscaled.12487a04f1d9f737993b.jpeg" alt=""
-                    style="width: 100%; height: 400px; object-fit: cover; object-position: center top; border-radius: 30px;">
-                <p class="fmld-mrg-16"
-                    style="height: 30px; width: 95%; top: 30%; left: 6%; transform: translateX(-6%); position: absolute; text-shadow: black 10px 0px 20px; color: white; font-size: 30px; text-overflow: ellipsis;">
-                    Bienvenu sur bijou! Ici, vous trouverez une large selection des plantes de type bijou vera
-                    d'excellentes qualités!</p>
-            </div>
-            <div class="grid-repeat-2 gap-2 container fmld-pdg-8">
-                <div><a href="/product/0"><img class="product-img"
-                            src="/static/media/bijou-3_upscaled.5079f7566003567486c0.png" alt="">
-                        <p><span>bijou a</span><br><span>6000 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
-                <div><a href="/product/1"><img class="product-img"
-                            src="/static/media/bijou-2_upscaled.db4cef299f678d607aaf.png" alt="">
-                        <p><span>bijou b</span><br><span>9800 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Retirer du panier</button></div>
-            </div>
-            <div class="grid-repeat gap-1 container fmld-pdg-8">
-                <div class="fmld-mrg-tb-"><a href="/product/2"><img
-                            src="/static/media/bijou-3_upscaled.5079f7566003567486c0.png" class="product-img" alt="">
-                        <p><span>bijou c</span><br><span>3500 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
-                <div class="fmld-mrg-tb-"><a href="/product/3"><img
-                            src="/static/media/bijou-4_upscaled.c6cb78cb0f866556266e.png" class="product-img" alt="">
-                        <p><span>bijou d</span><br><span>4000 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
-                <div class="fmld-mrg-tb-"><a href="/product/4"><img
-                            src="/static/media/bijou-5_upscaled.95e05d1b2b256ad361f9.png" class="product-img" alt="">
-                        <p><span>bijou e</span><br><span>3500 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
-                <div class="fmld-mrg-tb-"><a href="/product/5"><img
-                            src="/static/media/bijou-6_upscaled.649f279b0c0244368e64.png" class="product-img" alt="">
-                        <p><span>bijou f</span><br><span>3000 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Retirer du panier</button></div>
-                <div class="fmld-mrg-tb-"><a href="/product/6"><img
-                            src="/static/media/bijou-7_upscaled.762e375450dfd3c509d8.png" class="product-img" alt="">
-                        <p><span>bijou g</span><br><span>5500 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Retirer du panier</button></div>
-                <div class="fmld-mrg-tb-"><a href="/product/7"><img
-                            src="/static/media/bijou_upscaled.12487a04f1d9f737993b.jpeg" class="product-img" alt="">
-                        <p><span>bijou h</span><br><span>3500 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
-                <div class="fmld-mrg-tb-"><a href="/product/8"><img
-                            src="/static/media/bijou-7_upscaled.762e375450dfd3c509d8.png" class="product-img" alt="">
-                        <p><span>bijou i</span><br><span>6000 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
-                <div class="fmld-mrg-tb-"><a href="/product/9"><img
-                            src="/static/media/bijou-1_upscaled.8b6e2217d8986f99251b.png" class="product-img" alt="">
-                        <p><span>bijou j</span><br><span>5000 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
-                <div class="fmld-mrg-tb-"><a href="/product/10"><img
-                            src="/static/media/bijou-5_upscaled.95e05d1b2b256ad361f9.png" class="product-img" alt="">
-                        <p><span>bijou k</span><br><span>3500 FCFA</span></p>
-                    </a><button class="btn fav-btn fmld-zoom-out">Ajouter aux favoris</button></div>
+            <div class="border-light fmld-pdg-left fmld-pdg-right fmld-pdg-bottom"style="height: max-content;">
+                <dl class="flex items-center justify-between gap-1 fmld-pdg-bottom">
+                    <dt class="fmld-bold">Sous-total: </dt>
+                    <dd class="fmld-large fmld-pdg">32300 FCFA</dd>
+                </dl>
+                
+                <dl class="flex items-center justify-between gap-1 fmld-mrg-tb fmld-pdg-bottom">
+                    <dt class="fmld-bold">Expédition: </dt>
+                    <dd class="fmld-large fmld-pdg-top">
+                        Saisissez votre adresse pour voir les options de livraison.
+                    <button class="c-btn fmld-pdg-8 fmld-medium text-primary">
+                        Calculer les frais d’expédition
+                    </button>
+                </dd>
+                </dl>
+                
+                <dl class="flex items-center justify-between gap-1 fmld-pdg-8-">
+                    <dt class="fmld-bold">Total panier: </dt>
+                    <dd class="fmld-large fmld-pdg">32300 FCFA</dd>
+                </dl>
+                
+                <div class="fmld-w-100 fmld-pdg-bottom fmld-mrg-top">
+                    <button form="checkoutform" class="fmld-width-100 fmld-width-300-l- btn fav-btn fmld-pdg-16 fmld-zoom-out"
+                        type="submit">
+                        Commander maintenant
+                    </button>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="modal-parent" id="z-modal-popup">
-                <div class="modal-underlay"></div>
+        
+        <!-- modals -->
+        <aside>
+            <div class="modal-parent" id="cart-modal">
+                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
                 <div class="fmld-modal fmld-anim-right">
-                    <h4 style="position: relative;"><span class="" style="font-size: 18px; font-weight: bold;">Mes
-                            favoris<span
-                                style="background: teal; border-radius: 20px; color: white; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span></span><button
-                            style="font-size: 18px; position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
+                    <h4 style="position: relative;">
+                        <span class="" style="font-size: 18px; font-weight: bold;">
+                            Mes favoris
+                            <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
+                        </span>
+                        <button onclick="viewCart('#cart-modal')" class="fmld-large fmld-bold" style="position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
                     <div>
                         <div style="overflow-y: scroll;">
-                            <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/6"><img
-                                        src="/static/media/bijou-7_upscaled.762e375450dfd3c509d8.png" alt=""
-                                        style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/6">bijou g</a>
+                            <div class="grid-c-2 grid-m-2 gap-1" style="height: 150px;">
+                                <a href="./product/6">
+                                    <img src="images/products/img_0218-1152x1536.jpeg" alt=""
+                                        style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;">
+                                </a>
+                                <div>
+                                    <span class="fmld-mrg-tb" style="font-size: 16px;">
+                                        <a href="./product/6">bijou g</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">5500 FCFA</div>
-                                    <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input
-                                            class="fmld-pdg-8" min="1" value="3"
+                                    <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
+                                            min="1" value="3"
                                             style="width: 30px; border: none; text-align: center;"><button
                                             class="fmld-pdg-8">+</button></div>
                                 </div>
                             </div>
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/5"><img
-                                        src="/static/media/bijou-6_upscaled.649f279b0c0244368e64.png" alt=""
+                                        src="images/products/img_0412-1152x1536.jpeg" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
                                 <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">bijou f</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">3000 FCFA</div>
-                                    <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input
-                                            class="fmld-pdg-8" min="1" value="2"
+                                    <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
+                                            min="1" value="2"
                                             style="width: 30px; border: none; text-align: center;"><button
                                             class="fmld-pdg-8">+</button></div>
                                 </div>
                             </div>
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/1"><img
-                                        src="/static/media/bijou-2_upscaled.db4cef299f678d607aaf.png" alt=""
+                                        src="images/products/img_0360-1152x1536.jpeg" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
                                 <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">bijou b</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">9800 FCFA</div>
-                                    <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input
-                                            class="fmld-pdg-8" min="1" value="1"
+                                    <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
+                                            min="1" value="1"
                                             style="width: 30px; border: none; text-align: center;"><button
                                             class="fmld-pdg-8">+</button></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="b-btn"><a href="/checkout"><button
-                                    class="btn fmld-mrg-tb fmld-pdg-16 fmld-zoom-out">Acheter maintenant</button></a>
-                        </div>
+                        <div class="b-btn"><a href="/cart.html">
+                            <button
+                                    class="btn fmld-mrg-tb fmld-pdg-16 fmld-zoom-out">Acheter maintenant</button></a></div>
                     </div>
                 </div>
             </div>
@@ -217,13 +251,50 @@
                             <h2 class="fmld-mrg-bottom fmld-pdg-8">Vos resultats de recherches s'afficheront ici!</h2>
                         </div>
                     </div>
+            </div>
+        </aside>
+        <!-- footer -->
+        <footer class="fmld-pdg-16" style="height: ; background: var(--secondary); position: relative; bottom: 0px;">
+            <div class="grid-repeat gap-1">
+
+                <!-- Brand -->
+                <div>
+                    <a href="/">
+                        <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo"
+                            style="background: white; border-radius: 6px;">
+                    </a>
+                    <p class="mt-2 text-sm text-gray-500">Frameload Shop</p>
                 </div>
-        </div>
-        <div class="fmld-pdg-16" style="height: 200px; background: teal; position: relative; bottom: 0px;">
-            <div><span class="fmld-pdg-16"><a href="/">Acceuil</a></span><span class="fmld-pdg-16"><a
-                        href="/category">Categories</a></span><span class="fmld-pdg-16"><a href="/nopage">Page
-                        d'erreur</a></span><span class="fmld-pdg-16"><a href="/checkout">Panier</a></span></div>
-        </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="">Liens rapides</h4>
+                    <ul class="fmld-list-nobullet fmld-pdg-0">
+                        <li class="fmld-pdg-bottom"><a href="index.html">Accueil</a></li>
+                        <li class="fmld-pdg-bottom"><a href="./products.html">Produits</a></li>
+                        <li class="fmld-pdg-bottom"><a href="./categories.html">Catégories</a></li>
+                        <li class="fmld-pdg-bottom"><a href="./account.html">Mon compte</a></li>
+                        <li class="fmld-pdg-bottom"><a href="#">Panier</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div>
+                    <h4 class="">Contacts</h4>
+                    <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px"
+                            width="20px"> <a href="mailto:contact@frameloadshop.com" class="">
+                            contact@frameloadshop.com</a></p>
+                    <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px"
+                            width="20px"> Téléphone: <a href="tel:+221707981934" class="">+0123456789</a></p>
+                    <p><img class="inline-block" src="../images/assets/pin.png" alt="emoji phone" height="20px"
+                            width="20px"> Adresse: Dakar, Senegal</p>
+                </div>
+            </div>
+
+            <div class="fmld-center ">
+                © 2026 Frameload Shop. All rights reserved.
+            </div>
+        </footer>
     </div>
 </body>
 
