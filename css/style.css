@@ -343,13 +343,10 @@ a {
 .fmld-modal {
     position: fixed;
     z-index: 39;
-    background: #fff;
-    /* border-radius:11px; */
+    background: var(--white);
     width: 350px;
     height: 100%;
     right: 0%;
-    /* transform: translate(-50%,-40%); */
-    padding: 16px;
     top: 0%;
     overflow-x: none;
     overflow-y: scroll;
@@ -394,7 +391,7 @@ a {
 }
 
 .fmld-width-100 {
-    width: 100%;
+    width: 100%!important;
 }
 
 .fmld-svg {
@@ -540,6 +537,10 @@ button,
     -webkit-overflow-scrolling: touch;
 }
 
+.modal-cart-img{
+    width: 95px; height: 95px; object-fit: cover;border-radius: 6px !important;
+}
+
 .flex {
     display: flex
 }
@@ -620,7 +621,7 @@ button,
 
 .slider {
     width: 96%;
-    height: 96%;
+    height: 100%;
     border-radius: "15px";
     display: inline-block;
     position: relative;
@@ -811,7 +812,7 @@ button,
     }
 
     .fmld-modal {
-        width: 94%;
+        width: 100%;
     }
 
     .scrollin-img {
