@@ -90,21 +90,21 @@
     </nav>
     <!-- debut main -->
     <main id="main" class="fmld-mrg-tb">
-        <div class="fmld-height-80vh">
-            <h1 class="fmld-center text-center">Créer un compte</h1>
-            <form class="fmld-center fmld-w-90-m fmld-w-350-l">
+        <div class="fmld-height-80vh grid-c-1 gap-2 justify-center items-center ">
+            <form class="fmld-mrg-bottom fmld-pdg-left fmld-pdg-right">
+                <h1 class="fmld-center">Créer un compte</h1>
                 <div class="fmld-pdg-top fmld-pdg-bottom fmld-width-100">
-                    <label for="username" class="form-label fmld-medium fmld-pdg-top fmld-left">Nom d'utilisateur (adresse email)</label>
-                    <div class="fmld-w-90">
-                        <input type="email" class="border-light fmld-width-90 fmld-width-300-l fmld-pdg-8" id="username" required>
+                    <label for="username" class="form-label fmld-medium fmld-pdg-bottom fmld-left">Nom d'utilisateur (adresse email)</label>
+                    <div class="fmld-width-100">
+                        <input type="email" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8" id="username" required>
                         <div class="invalid-feedback fmld-small fmld-pdg">L'adresse email de votre compte.</div>
                     </div>
                 </div>
                 <div class="fmld-pdg-bottom fmld-width-100">
-                    <label for="password" class="form-label fmld-medium fmld-pdg-8 fmld-left">Mot de passe</label>
-                    <div class="fmld-w-90">
+                    <label for="password" class="form-label fmld-medium fmld-pdg-bottom fmld-left">Mot de passe</label>
+                    <div class="fmld-width-100">
                         <input minlength="6" type="password"
-                            class="border-light fmld-width-90 fmld-width-300-l fmld-pdg-8"
+                            class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8"
                             id="password" required>
                         <div class="invalid-feedback fmld-small fmld-pdg">Le mot de passe de votre compte.</div>
                     </div>
@@ -112,19 +112,19 @@
                 <div class="fmld-pdg-bottom fmld-width-100">
                     <label for="phonenumber"
                         class="form-label fmld-medium fmld-pdg-bottom fmld-left">Numéro de téléphone</label>
-                    <div class="fmld-w-90">
+                    <div class="fmld-width-100">
                         <input minlength="9" maxlength="9"
                             pattern="^\d+$" type="tel" inputmode="numeric"
-                            class="border-light fmld-width-90 fmld-width-300-l fmld-pdg-8"
+                            class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8"
                             id="phonenumber" required>
                         <div class="invalid-feedback fmld-small fmld-pdg">Doit contenir exatement 9 chiffres.</div>
                     </div>
                 </div>
-                <div class="fmld-w-100 fmld-pdg-bottom">
+                <div class="fmld-width-100 fmld-pdg-bottom">
                     <button class="fmld-width-100 fmld-width-300-l btn fmld-medium fmld-pdg-16 fmld-zoom-out"
                         type="submit">S'inscrire</button>
                     </div>
-                <div class="fmld-w-100 fmld-pdg-bottom">
+                <div class="fmld-width-100 fmld-pdg-bottom">
                     <p>Vous avez déjà un compte? <a class="text-primary" href="./login.html">Connectez-vous</a> </p>
                 </div>
             </form>
