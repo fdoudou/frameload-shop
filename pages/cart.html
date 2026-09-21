@@ -22,152 +22,179 @@
     <div id="root">
         <!-- debut header -->
         <header class="flex items-center justify-between"
-        style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
-        <a style="border-radius: 45px" class="fmld-mrg-left fmld-hide-mobile white flex items-start fmld-pdg"
-            href="../index.html">
-            <img src="../images/assets/cart.svg" alt="" width="30px" height="30px">
-        </a>
-        <div class="flex items-center justify-center fmld-pdg-left fmld-pdg-right header-container fmld-hide-mobile">
-            <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="../index.html">Acceuil</a>
-            </span>
-            <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./products.html">Produits</a>
-            </span>
-            <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./categories.html">Catégories</a>
-            </span>
-            <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./account.html">Mon compte</a>
-            </span>
-        </div>
-        
-        <button onclick="viewCart('#nav-modal')" class="btn fmld-pdg-8 c-btn fmld-zoom-out fmld-hide-nomobile"
-            style="position: absolute; top: 10px; display: inline-block;">
-            <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
-    
-        <a class="fmld-hide-nomobile white flex items-center justify-center fmld-pdg" style="border-radius: 45px"
-            href="../index.html">
-            <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo"
-                style="background: white; border-radius: 45px;">
-        </a>
-    
-        <div class="" style="position: absolute; right: 0px; top: 10px; display: inline-block; width: 100px;">
-            <button onclick="viewCart('#search-modal')" class="fmld-pdg-8 btn c-btn btn fmld-zoom-out">
+            style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
+            <a style="border-radius: 45px" class="fmld-mrg-left fmld-hide-mobile white flex items-start fmld-pdg"
+                href="../index.html">
+                <img src="../images/assets/cart.svg" alt="" width="30px" height="30px">
+            </a>
+            <div
+                class="flex items-center justify-center fmld-pdg-left fmld-pdg-right header-container fmld-hide-mobile">
+                <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="../index.html">Acceuil</a>
+                </span>
+                <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./products.html">Produits</a>
+                </span>
+                <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./categories.html">Catégories</a>
+                </span>
+                <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./account.html">Mon compte</a>
+                </span>
+            </div>
+
+            <button onclick="viewCart('#nav-modal')" class="btn fmld-pdg-8 c-btn fmld-zoom-out fmld-hide-nomobile"
+                style="position: absolute; top: 10px; display: inline-block;">
                 <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </button>
-            <button onclick="viewCart('#cart-modal')" class="fmld-pdg-8 btn c-btn fmld-zoom-out">
-                <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="10" cy="20.5" r="1"></circle>
-                    <circle cx="18" cy="20.5" r="1"></circle>
-                    <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
-                </svg>
-                <span
-                    style="background: var(--accent); border-radius: 18px; color: white; padding: 3px 5px; font-size: 10px;">3</span>
-            </button>
-        </div>
+
+            <a class="fmld-hide-nomobile white flex items-center justify-center fmld-pdg" style="border-radius: 45px"
+                href="../index.html">
+                <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo"
+                    style="background: white; border-radius: 45px;">
+            </a>
+
+            <div class="" style="position: absolute; right: 0px; top: 10px; display: inline-block; width: 100px;">
+                <button onclick="viewCart('#search-modal')" class="fmld-pdg-8 btn c-btn btn fmld-zoom-out">
+                    <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <button onclick="viewCart('#cart-modal')" class="fmld-pdg-8 btn c-btn fmld-zoom-out">
+                    <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="10" cy="20.5" r="1"></circle>
+                        <circle cx="18" cy="20.5" r="1"></circle>
+                        <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
+                    </svg>
+                    <span
+                        style="background: var(--accent); border-radius: 18px; color: white; padding: 3px 5px; font-size: 10px;">3</span>
+                </button>
+            </div>
         </header>
         <!-- nav panel -->
         <nav class="modal-parent" id="nav-modal">
-        <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
-        <!-- navigation -->
-        <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
-            <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./products.html">Produits</a>
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./categories.html">Catégories</a>
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./account.html">Compte</a>
-                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
+            <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
+            <!-- navigation -->
+            <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
+                <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./products.html">Produits</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./categories.html">Catégories</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./account.html">Compte</a>
+                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
+                </div>
+
+                <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right"
+                    style="position: absolute; top: 16px; right: 16px;">×</button>
             </div>
-            
-            <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right" style="position: absolute; top: 16px; right: 16px;">×</button>
-        </div>
         </nav>
-        <h2 class="fmld-mrg-tb fmld-pdg-16" style="font-size: 22px;">Réglez vos achats</h2>
-        <div class="container- fmld-mrg">
-            <div class="grid-c-2 gap-2 fmld-mrg fmld-mrg-tb fmld-pdg-bottom" style="min-height: 400px;">
+        <h2 class="fmld-mrg-tb fmld-pdg-16 fmld-large">Réglez vos achats</h2>
+        <div class="container- fmld-mrg fmld-height-80vh">
+            <div class="grid-c-half gap-2 fmld-mrg fmld-mrg-tb fmld-pdg-bottom">
                 <div>
-                    <div class="grid-c-2 grid-m-2" style="height: 150px; width: 100%;"><a href="/product/6"><img alt=""
-                                src="../images/products/img_0218-1152x1536.jpeg"
-                                style="width: 115px; height: 115px; object-fit: cover;"></a>
-                        <div>
-                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/6">bijou g</a> <button
-                                    style="position: relative; right: 16px;">supprimer ×</button></div>
-                            <div class="fmld-mrg-tb" style="font-size: 18px;">5500 FCFA</div>
-                            <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8" min="1"
-                                    value="3" style="width: 30px; border: none; text-align: center;"><button
-                                    class="fmld-pdg-8">+</button></div>
-                        </div>
+                    <div class="flex items-center justify-between gap-1 border-top-light" style="height: 150px; width: 100%;">
+                        <span >
+                            <button class="c-btn fmld-large">×</button>
+                        </span>
+                        <a href="/product/6">
+                            <img alt="" src="../images/products/img_0218-1152x1536.jpeg" style="width: 115px; height: 115px; object-fit: cover;">
+                        </a>
+                        <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou g</a>
+
+                        <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+
+                        <span class="fmld-mrg-tb border-light">
+                            <button class="c-btn fmld-pdg-8 fmld-large">-</button>
+                            <input class="fmld-pdg-8 fmld-center" min="1" value="3" style="width: 30px; border: none;">
+                            <button class="c-btn fmld-pdg-8 fmld-large">+</button>
+                        </span>
                     </div>
-                    <div class="grid-c-2 grid-m-2" style="height: 150px; width: 100%;"><a href="/product/5"><img alt=""
-                                src="../images/products/img_0220-1152x1536.jpeg"
-                                style="width: 115px; height: 115px; object-fit: cover;"></a>
-                        <div>
-                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">bijou f</a> <button
-                                    style="position: relative; right: 16px;">supprimer ×</button></div>
-                            <div class="fmld-mrg-tb" style="font-size: 18px;">3000 FCFA</div>
-                            <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8" min="1"
-                                    value="2" style="width: 30px; border: none; text-align: center;"><button
-                                    class="fmld-pdg-8">+</button></div>
-                        </div>
+                    <div class="flex items-center justify-between gap-1 border-top-light" style="height: 150px; width: 100%;">
+                        <span >
+                            <button class="c-btn fmld-large">×</button>
+                        </span>
+                        <a href="/product/6">
+                            <img alt="" src="../images/products/img_0220-1152x1536.jpeg" style="width: 115px; height: 115px; object-fit: cover;">
+                        </a>
+                        <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
+
+                        <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+
+                        <span class="fmld-mrg-tb border-light">
+                            <button class="c-btn fmld-pdg-8 fmld-large">-</button>
+                            <input class="fmld-pdg-8 fmld-center" min="1" value="3" style="width: 30px; border: none;">
+                            <button class="c-btn fmld-pdg-8 fmld-large">+</button>
+                        </span>
                     </div>
-                    <div class="grid-c-2 grid-m-2" style="height: 150px; width: 100%;"><a href="/product/1"><img alt=""
-                                src="../images/products/img_0269-1152x1536.jpeg"
-                                style="width: 115px; height: 115px; object-fit: cover;"></a>
-                        <div>
-                            <div class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">bijou b</a> <button
-                                    style="position: relative; right: 16px;">supprimer ×</button></div>
-                            <div class="fmld-mrg-tb" style="font-size: 18px;">9800 FCFA</div>
-                            <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8" min="1"
-                                    value="1" style="width: 30px; border: none; text-align: center;"><button
-                                    class="fmld-pdg-8">+</button></div>
-                        </div>
+                    <div class="flex items-center justify-between gap-1 border-top-light" style="height: 150px; width: 100%;">
+                        <span >
+                            <button class="c-btn fmld-large">×</button>
+                        </span>
+                        <a href="/product/6">
+                            <img alt="" src="../images/products/img_0269-1152x1536.jpeg" style="width: 115px; height: 115px; object-fit: cover;">
+                        </a>
+                        <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
+
+                        <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+
+                        <span class="fmld-mrg-tb border-light">
+                            <button class="c-btn fmld-pdg-8 fmld-large">-</button>
+                            <input class="fmld-pdg-8 fmld-center" min="1" value="3" style="width: 30px; border: none;">
+                            <button class="c-btn fmld-pdg-8 fmld-large">+</button>
+                        </span>
                     </div>
                 </div>
-                <div>
-                    <p><span style="font-weight: bold;">Sous-total: </span><span class="fmld-large fmld-pdg"
-                            style="font-size: 22px;">32300 FCFA</span></p>
-                    <div class="fmld-pdg-16" style="min-height: 255px;">
-                        <div><span class="fmld-large fmld-mrg-tb fmld-pdg-16" style="font-size: 22px;">Selectionnez une
-                                méthode de paiement:</span></div>
-                        <div class="fmld-pdg-8"><input class="fmld-hide" id="v-type-2" type="radio" name="vtype"
-                                value="2"><label for="v-type-2"><img alt="" width="75px" height="75px"
-                                    class="fmld-zoom-out"
-                                    src="data:image/png;base64,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"
-                                    style="width: 75px; height: 75px; object-fit: contain; border-radius: 180px; cursor: pointer;"></label>
-                        </div>
-                        <div class="fmld-pdg-8"><input class="fmld-hide" id="v-type-3" type="radio" name="vtype"
-                                value="3"><label for="v-type-3"><img alt="" width="75px" height="75px"
-                                    class="fmld-zoom-out"
-                                    src="data:image/jpeg;base64,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"
-                                    style="width: 75px; height: 75px; object-fit: contain; border-radius: 180px; cursor: pointer;"></label>
-                        </div>
-                    </div><button class="btn fav-btn fmld-large fmld-pdg-16 fmld-zoom-out"
-                        style="min-width: 200px;">Payer</button>
+                <div class="border-light fmld-pdg-left fmld-pdg-right fmld-pdg-bottom">
+                    <dl class="flex items-center justify-between gap-1">
+                        <dt class="fmld-bold">Sous-total: </dt>
+                        <dd class="fmld-large fmld-pdg">32300 FCFA</dd>
+                    </dl>
+                    <div class="fmld-mrg-tb" style="min-height: 255px;">
+                        <dl class="flex items-center justify-between gap-1 fmld-pdg-8-">
+                            <dt class="fmld-bold">Expédition: </dt>
+                            <dd class="fmld-large fmld-pdg">Saisissez votre adresse pour voir les options de livraison.
+                                Calculer les frais d’expédition</dd>
+                        </dl>
+                        <dl class="flex items-center justify-between gap-1 fmld-pdg-8-">
+                            <dt class="fmld-bold">Total panier: </dt>
+                            <dd class="fmld-large fmld-pdg">32300 FCFA</dd>
+                        </dl>
+                    </div>
+                    <div class="flex items-center justify-between gap-1">
+                        <button class="btn fav-btn fmld-medium fmld-pdg-16 fmld-zoom-out">Passer la commande</button>
+                        <button class="btn fav-btn fmld-medium fmld-pdg-16 fmld-zoom-out secondary">Continuer mes achats</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="modal-parent" id="z-modal-popup">
-                <div class="modal-underlay"></div>
+        
+        <!-- modals -->
+        <aside>
+            <div class="modal-parent" id="cart-modal">
+                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
                 <div class="fmld-modal fmld-anim-right">
-                    <h4 style="position: relative;"><span class="" style="font-size: 18px; font-weight: bold;">Mes
-                            favoris<span
-                                style="background: teal; border-radius: 20px; color: white; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span></span><button
-                            style="font-size: 18px; position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
+                    <h4 style="position: relative;">
+                        <span class="" style="font-size: 18px; font-weight: bold;">
+                            Mes favoris
+                            <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
+                        </span>
+                        <button onclick="viewCart('#cart-modal')" class="fmld-large fmld-bold" style="position: absolute; right: 0px; padding: 5px 8px;">×</button></h4>
                     <div>
                         <div style="overflow-y: scroll;">
-                            <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/6"><img
-                                        src="/static/media/bijou-7_upscaled.762e375450dfd3c509d8.png" alt=""
-                                        style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
-                                <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/6">bijou g</a>
+                            <div class="grid-c-2 grid-m-2 gap-1" style="height: 150px;">
+                                <a href="./product/6">
+                                    <img src="images/products/img_0218-1152x1536.jpeg" alt=""
+                                        style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;">
+                                </a>
+                                <div>
+                                    <span class="fmld-mrg-tb" style="font-size: 16px;">
+                                        <a href="./product/6">bijou g</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
                                     <div class="fmld-mrg-tb" style="font-size: 18px;">5500 FCFA</div>
                                     <div class="fmld-mrg-tb"><button class="fmld-pdg-8">-</button><input class="fmld-pdg-8"
@@ -177,7 +204,7 @@
                                 </div>
                             </div>
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/5"><img
-                                        src="/static/media/bijou-6_upscaled.649f279b0c0244368e64.png" alt=""
+                                        src="images/products/img_0412-1152x1536.jpeg" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
                                 <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/5">bijou f</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
@@ -189,7 +216,7 @@
                                 </div>
                             </div>
                             <div class="grid-c-2 grid-m-2" style="height: 150px;"><a href="/product/1"><img
-                                        src="/static/media/bijou-2_upscaled.db4cef299f678d607aaf.png" alt=""
+                                        src="images/products/img_0360-1152x1536.jpeg" alt=""
                                         style="width: 115px; height: 115px; object-fit: cover; border-radius: 15px;"></a>
                                 <div><span class="fmld-mrg-tb" style="font-size: 16px;"><a href="/product/1">bijou b</a>
                                         <button style="position: absolute; right: 16px;">supprimer ×</button></span>
@@ -201,7 +228,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="b-btn"><a href="/checkout"><button
+                        <div class="b-btn"><a href="/cart.html">
+                            <button
                                     class="btn fmld-mrg-tb fmld-pdg-16 fmld-zoom-out">Acheter maintenant</button></a></div>
                     </div>
                 </div>
@@ -220,19 +248,20 @@
                         </div>
                     </div>
             </div>
-        </div>
+        </aside>
         <!-- footer -->
         <footer class="fmld-pdg-16" style="height: ; background: var(--secondary); position: relative; bottom: 0px;">
             <div class="grid-repeat gap-1">
-        
+
                 <!-- Brand -->
                 <div>
-                <a href="/">
-                    <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo" style="background: white; border-radius: 6px;">
-                </a>
-                <p class="mt-2 text-sm text-gray-500">Frameload Shop</p>
+                    <a href="/">
+                        <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo"
+                            style="background: white; border-radius: 6px;">
+                    </a>
+                    <p class="mt-2 text-sm text-gray-500">Frameload Shop</p>
                 </div>
-        
+
                 <!-- Quick Links -->
                 <div>
                     <h4 class="">Liens rapides</h4>
@@ -244,16 +273,20 @@
                         <li class="fmld-pdg-bottom"><a href="#">Panier</a></li>
                     </ul>
                 </div>
-        
+
                 <!-- Socials -->
                 <div>
-                <h4 class="">Contacts</h4>
-                <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px" width="20px">  <a href="mailto:contact@frameloadshop.com" class=""> contact@frameloadshop.com</a></p>
-                <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px" width="20px"> Téléphone: <a href="tel:+221707981934" class="">+0123456789</a></p>
-                <p><img class="inline-block" src="../images/assets/pin.png" alt="emoji phone" height="20px" width="20px"> Adresse: Dakar, Senegal</p>
+                    <h4 class="">Contacts</h4>
+                    <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px"
+                            width="20px"> <a href="mailto:contact@frameloadshop.com" class="">
+                            contact@frameloadshop.com</a></p>
+                    <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px"
+                            width="20px"> Téléphone: <a href="tel:+221707981934" class="">+0123456789</a></p>
+                    <p><img class="inline-block" src="../images/assets/pin.png" alt="emoji phone" height="20px"
+                            width="20px"> Adresse: Dakar, Senegal</p>
                 </div>
             </div>
-        
+
             <div class="fmld-center ">
                 © 2026 Frameload Shop. All rights reserved.
             </div>

@@ -1,7 +1,7 @@
 :root {
     --primary: #a88558;
     --secondary: #e2cab0;
-    --accent:#dd9933;
+    --accent:#dd9933;/*#b58d8d*/
     --white: #fff;
     --black: var(--black);
     --gray: #bbb;
@@ -76,17 +76,28 @@ body {
     border: 2px solid var(--gray);
 }
 
+.border-top-gray {
+    border-top: 2px solid var(--gray);
+}
+
 .border-light {
-    border: 1px solid var(--gray-light);
+    border: 2px solid var(--gray-light);
+}
+
+.border-top-light {
+    border-top: 2px solid var(--gray-light);
 }
 
 .fmld-center {
     text-align: center;
 }
 
-
 .fmld-justify {
     text-align: justify;
+}
+
+.fmld-bold {
+    font-weight: bold;
 }
 
 .fmld-hide {
@@ -456,7 +467,7 @@ button,
 }
 
 .fmld-height-80vh {
-    height: 80vh;
+    min-height: 80vh;
 }
 
 #home-banner {
