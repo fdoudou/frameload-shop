@@ -560,6 +560,9 @@ button,
 .items-start {
     align-items: flex-start
 }
+.justify-end {
+    justify-content: flex-end
+}
 
 .items-center {
     align-items: center
