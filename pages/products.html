@@ -92,20 +92,34 @@
     </nav>
 
     <main id="main" class="fmld-mrg-tb">
-        <div class="container category-btn" style="margin: auto; display: flex; overflow: scroll;">
-            <button class="fmld-mrg-tb fmld-mrg-32 fmld-pdg-8" style="flex-shrink: 0;">
-                <a href="/category/plantes-mixtes">bracelets</a>
-            </button>
-            <button class="fmld-mrg-tb fmld-mrg-32 fmld-pdg-8" style="flex-shrink: 0;">
-                <a href="/category/plantes-interieurs">colliers</a>
-            </button>
-            <button class="fmld-mrg-tb fmld-mrg-32 fmld-pdg-8" style="flex-shrink: 0;">
-                <a href="/category/plantes-exterieurs">boucles d'oreilles</a>
-            </button>
-        </div>
         <!-- produits en promotion -->
-        <section class="fmld-mrg-16 fmld-pdg-8" style="background: var(--white); color: var(--black); text-align: center;">
-            <h2>Nos différents produits</h2>
+        <section class="fmld-mrg-8 fmld-pdg-8">
+            <h2 class="fmld-center fmld-pdg-8">Nos différents produits</h2>
+            <div class="flex items-center justify-between gap-1 fmld-width-100 fmld-mrg fmld-pdg-bottom">
+                <input type="search" class="border-light fmld-width-100- fmld-width-300-l- fmld-pdg-8" id="username" placeholder="rechercher un produit" required>
+                
+                <span class="">
+                    <select class="border-light fmld-width-100- fmld-width-300-l- fmld-pdg-8" id="countrycode" required>
+                        <option class="fmld-pdg-8" for="" value="category" selected>Filtrer par prix</option>
+                        <option class="fmld-pdg-8" for="" value="plus ancien">Tous</option>
+                        <option class="fmld-pdg-8" for="" value="plus recents">Moins de 50 000 FCFA</option>
+                        <option class="fmld-pdg-8" for="" value="cette semaine">50 000 – 150 000 FCFA</option>
+                        <option class="fmld-pdg-8" for="" value="ce mois-ci">Plus de 150 000 FCFA</option>
+                        <option class="fmld-pdg-8" for="" value="ctte année">---</option>
+                    </select>
+                    
+                    <select class="border-light fmld-width-100- fmld-width-300-l- fmld-pdg-8" id="countrycode" required>
+                        <option label="Filtrer par categorie" class="fmld-pdg-8" for="" value="category" selected>Filtrer par categorie</option>
+                        <option class="fmld-pdg-8" for="" value="bracelets">Toutes</option>
+                        <option class="fmld-pdg-8" for="" value="bracelets">bracelets</option>
+                        <option class="fmld-pdg-8" for="" value="colliers">colliers</option>
+                        <option class="fmld-pdg-8" for="" value="foulards">foulards</option>
+                        <option class="fmld-pdg-8" for="" value="parrures">parrures</option>
+                        <option class="fmld-pdg-8" for="" value="bagues">bagues</option>
+                    </select>
+                </span>
+                
+            </div>
             <div class="grid-repeat gap-2 fmld-pdg-8">
                 <div class="fmld-mrg-tb-">
                     <a href="../pages/product-detail.html">
