@@ -273,11 +273,11 @@ a {
 }
 
 .fmld-pdg {
-    padding: 5px 5px;
+    padding: 5px 5px!important;
 }
 
 .fmld-pdg-8 {
-    padding: 8px 8px;
+    padding: 8px 8px!important;
 }
 
 .fmld-pdg-16 {
