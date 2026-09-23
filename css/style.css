@@ -663,6 +663,9 @@ button,
 
 
 @media (min-width:768px) {
+    .fmld-width-50-l {
+        width: 50%;
+    }
     .fmld-width-90-l {
         width: 90%;
     }
