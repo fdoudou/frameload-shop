@@ -101,7 +101,7 @@
                 <div class="fmld-pdg-bottom fmld-width-100">
                     <label for="lastname" class="form-label fmld-small fmld-left">Nom </label>
                     <div class="fmld-width-100 fmld-mrg-top">
-                        <input type="text" class="border-light fmld-width-100 fmld-pdg-8" id="lastname" placeholder="Nom" required>
+                        <input type="text" class="border-light fmld-width-100 fmld-pdg-10" id="lastname" placeholder="Nom" required>
                         <div class="invalid-feedback fmld-small fmld-pdg">Votre nom.</div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     <label for="firstname" class="form-label fmld-small fmld-left">Prénom</label>
                     <div class="fmld-width-100 fmld-mrg-top">
                         <input minlength="6" type="text"
-                            class="border-light fmld-width-100 fmld-pdg-8"
+                            class="border-light fmld-width-100 fmld-pdg-10"
                             id="firstname" placeholder="Prénom" required>
                         <div class="invalid-feedback fmld-small fmld-pdg">Votre prénom.</div>
                     </div>
@@ -117,7 +117,7 @@
                 <div class="fmld-pdg-bottom fmld-width-100">
                     <label for="email" class="form-label fmld-small fmld-pdg-top fmld-left">Email</label>
                     <div class="fmld-width-100 fmld-mrg-top">
-                        <input type="email" class="border-light fmld-width-100 fmld-pdg-8" id="email" placeholder="Email" required>
+                        <input type="email" class="border-light fmld-width-100 fmld-pdg-10" id="email" placeholder="Email" required>
                         <div class="invalid-feedback fmld-small fmld-pdg">Adresse email vers laquelle nous vous enverrons les notifications.</div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                     <div class="fmld-width-100 fmld-mrg-top">
                         <input minlength="9" maxlength="9"
                             pattern="^\d+$" type="tel" inputmode="numeric"
-                            class="border-light fmld-width-100 fmld-pdg-8"
+                            class="border-light fmld-width-100 fmld-pdg-10"
                             id="phonenumber" placeholder="Numéro de téléphone" required>
                         <div class="invalid-feedback fmld-small fmld-pdg">Numéro sur lequel nous pouvons vous joindre.</div>
                     </div>
@@ -136,7 +136,7 @@
                     <label for="phonenumber"
                         class="form-label fmld-small fmld-pdg-bottom fmld-left">Adresse </label>
                     <div class="fmld-width-100 fmld-mrg-top">
-                        <select class="border-light fmld-width-100 fmld-pdg-8" id="countrycode" required>
+                        <select class="border-light fmld-width-100 fmld-pdg-10" id="countrycode" required>
                             <option class="fmld-pdg-8 fmld-width-100" for="" value="Ville 1">Choisir une option</option>
                             <option class="fmld-pdg-8 fmld-width-100" for="" value="Ville 1">Ville 1</option>
                             <option class="fmld-pdg-8 fmld-width-100" for="" value="Ville 2">Ville 2</option>
@@ -152,9 +152,9 @@
             <div class="gray-light0 border-wave-light fmld-pdg-left fmld-pdg-right fmld-pdg-bottom"style="height: max-content;">
                 <h4 class="fmld-mrg-tb fmld-pdg-top fmld-xxlarge-">Vous avez un code promo? Saisissez-le pour bénéficier d'une réduction!</h4>
                 <div class="flex items-center justify-between gap-1 fmld-mrg-tb">
-                    <input type="number" minlength="4" maxlength="4" pattern="^\d+$" inputmode="numeric" class="border-light fmld-width-100 fmld-pdg-8" id="code" placeholder="Code promo - ex: 1234" required>
-                    <span >
-                        <button type="submit" value="submit" class="btn fmld-pdg-8 fmld-zoom-out">Vérifier</button>
+                    <input type="number" minlength="4" maxlength="4" pattern="^\d+$" inputmode="numeric" class="border-light fmld-width-50-l fmld-pdg-10" id="code" placeholder="Code promo - ex: 1234" required>
+                    <span class="">
+                        <button type="button" value="submit" class="btn fmld-pdg-10 fmld-zoom-out">Appliquer code promo</button>
                     </span>
                 </div>
 
@@ -167,7 +167,7 @@
                     <dt class="fmld-bold">Expédition: </dt>
                     <dd class="fmld-medium fmld-pdg-top">
                         Saisissez votre adresse pour voir les options de livraison.
-                    <button class="c-btn fmld-pdg-8 fmld-medium text-primary">
+                    <button type="button" class="c-btn fmld-pdg-8 fmld-medium text-primary">
                         Calculer les frais d’expédition
                     </button>
                 </dd>
