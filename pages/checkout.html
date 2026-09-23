@@ -95,9 +95,9 @@
             </div>
         </nav>
 
-        <h1 class="fmld-mrg-tb fmld-pdg-16 fmld-xxlarge">Passer ma commander</h1>
-        <div class="grid-c-half gap-2 justify-center fmld-mrg fmld-pdg-bottom">
-            <form id="checkoutform">
+        <h1 class="fmld-mrg-tb fmld-pdg-16 fmld-xxlarge">Finaliser ma commander</h1>
+        <form action="./checkout.html" method="get" class="grid-c-half gap-2 justify-center fmld-mrg fmld-pdg-bottom">
+            <div class="">
                 <div class="fmld-pdg-bottom fmld-width-100">
                     <label for="lastname" class="form-label fmld-small fmld-left">Nom </label>
                     <div class="fmld-width-100 fmld-mrg-top">
@@ -147,17 +147,25 @@
                         <div class="invalid-feedback fmld-small fmld-pdg">Ville au niveau de laquelle nous enverrons le colis.</div>
                     </div>
                 </div>
-            </form>
+            </div>
             
             <div class="gray-light0 border-wave-light fmld-pdg-left fmld-pdg-right fmld-pdg-bottom"style="height: max-content;">
-                <dl class="flex items-center justify-between gap-1 fmld-pdg-bottom">
+                <h4 class="fmld-mrg-tb fmld-pdg-top fmld-xxlarge-">Vous avez un code promo? Saisissez-le pour bénéficier d'une réduction!</h4>
+                <div class="flex items-center justify-between gap-1 fmld-mrg-tb">
+                    <input type="number" min="100" max="500000" pattern="^\d+$" inputmode="numeric" class="border-light fmld-width-100 fmld-pdg-8" id="phonenumber" placeholder="Numéro de téléphone" required>
+                    <span >
+                        <button type="submit" value="submit" class="btn fav-btn fmld-medium fmld-pdg fmld-zoom-out">Vérifier</button>
+                    </span>
+                </div>
+
+                <dl class="flex items-center justify-between gap-1 fmld-pdg-bottom fmld-pdg-top border-top-light">
                     <dt class="fmld-bold">Sous-total: </dt>
-                    <dd class="fmld-large fmld-pdg">32300 FCFA</dd>
+                    <dd class="fmld-medium fmld-pdg">32300 FCFA</dd>
                 </dl>
                 
                 <dl class="flex items-center justify-between gap-1 fmld-mrg-tb fmld-pdg-bottom">
                     <dt class="fmld-bold">Expédition: </dt>
-                    <dd class="fmld-large fmld-pdg-top">
+                    <dd class="fmld-medium fmld-pdg-top">
                         Saisissez votre adresse pour voir les options de livraison.
                     <button class="c-btn fmld-pdg-8 fmld-medium text-primary">
                         Calculer les frais d’expédition
@@ -171,13 +179,13 @@
                 </dl>
                 
                 <div class="fmld-w-100 fmld-pdg-top fmld-pdg-bottom fmld-mrg-top">
-                    <button form="checkoutform" class="fmld-width-100 fmld-medium fmld-bold btn fav-btn fmld-pdg-16 fmld-zoom-out"
+                    <button class="fmld-width-100 fmld-medium fmld-bold btn fav-btn fmld-pdg-16 fmld-zoom-out"
                         type="submit">
                         Commander maintenant
                     </button>
                 </div>
             </div>
-        </div>
+        </form>
 
         <dialog class="">
             Commande enregistrée
