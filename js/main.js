@@ -6,3 +6,11 @@ function viewCart (target) {
         document.querySelector(target).className = 'modal-parent';
     }
 }
+
+function decreaseValue (element) {
+    document.querySelector(element).stepDown();
+}
+
+function increaseValue (element) {
+    document.querySelector(element).stepUp();
+}
