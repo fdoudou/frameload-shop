@@ -28,6 +28,10 @@ body {
     font-family: Helvetica, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
 
+dd {
+    margin-inline-start: 0px;
+}
+
 .primary {
     background: var(--primary) !important;
 }
@@ -100,6 +104,10 @@ body {
 
 .border-top-light {
     border-top: 2px solid var(--gray-light);
+}
+
+.fmld-start {
+    text-align:start;
 }
 
 .fmld-center {
