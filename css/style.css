@@ -68,6 +68,10 @@ dd {
     color: var(--black);
 }
 
+.text-gray-dark {
+    color: var(--gray-dark);
+}
+
 .text-gray {
     color: var(--gray);
 }
