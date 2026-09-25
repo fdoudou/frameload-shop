@@ -19,82 +19,81 @@
 </head>
 
 <body class="container">
-    <div id="root">
-        <!-- debut header -->
-        <header class="flex items-center justify-between"
-            style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
-            <a style="border-radius: 45px" class="fmld-mrg-left fmld-hide-mobile white flex items-start fmld-pdg"
-                href="../index.html">
-                <img src="../images/assets/cart.svg" alt="" width="30px" height="30px">
-            </a>
-            <div
-                class="flex items-center justify-center fmld-pdg-left fmld-pdg-right header-container fmld-hide-mobile">
-                <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="../index.html">Acceuil</a>
-                </span>
-                <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./products.html">Produits</a>
-                </span>
-                <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./categories.html">Catégories</a>
-                </span>
-                <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./account.html">Mon compte</a>
-                </span>
-            </div>
+    <!-- debut header -->
+    <header class="flex items-center justify-between"
+        style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
+        <a style="border-radius: 45px" class="fmld-mrg-left fmld-hide-mobile white flex items-start fmld-pdg"
+            href="../index.html">
+            <img src="../images/assets/cart.svg" alt="" width="30px" height="30px">
+        </a>
+        <div
+            class="flex items-center justify-center fmld-pdg-left fmld-pdg-right header-container fmld-hide-mobile">
+            <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="../index.html">Acceuil</a>
+            </span>
+            <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./products.html">Produits</a>
+            </span>
+            <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./categories.html">Catégories</a>
+            </span>
+            <span class="fmld-pdg-16 fmld-zoom-out fmld-upper"><a href="./account.html">Mon compte</a>
+            </span>
+        </div>
 
-            <button onclick="viewCart('#nav-modal')" class="btn fmld-pdg-8 c-btn fmld-zoom-out fmld-hide-nomobile"
-                style="position: absolute; top: 10px; display: inline-block;">
+        <button onclick="viewCart('#nav-modal')" class="btn fmld-pdg-8 c-btn fmld-zoom-out fmld-hide-nomobile"
+            style="position: absolute; top: 10px; display: inline-block;">
+            <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
+        <a class="fmld-hide-nomobile white flex items-center justify-center fmld-pdg" style="border-radius: 45px"
+            href="../index.html">
+            <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo"
+                style="background: white; border-radius: 45px;">
+        </a>
+
+        <div class="" style="position: absolute; right: 0px; top: 10px; display: inline-block; width: 100px;">
+            <button onclick="viewCart('#search-modal')" class="fmld-pdg-8 btn c-btn btn fmld-zoom-out">
                 <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
             </button>
-
-            <a class="fmld-hide-nomobile white flex items-center justify-center fmld-pdg" style="border-radius: 45px"
-                href="../index.html">
-                <img src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo"
-                    style="background: white; border-radius: 45px;">
-            </a>
-
-            <div class="" style="position: absolute; right: 0px; top: 10px; display: inline-block; width: 100px;">
-                <button onclick="viewCart('#search-modal')" class="fmld-pdg-8 btn c-btn btn fmld-zoom-out">
-                    <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </button>
-                <button onclick="viewCart('#cart-modal')" class="fmld-pdg-8 btn c-btn fmld-zoom-out">
-                    <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="10" cy="20.5" r="1"></circle>
-                        <circle cx="18" cy="20.5" r="1"></circle>
-                        <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
-                    </svg>
-                    <span
-                        style="background: var(--accent); border-radius: 18px; color: white; padding: 3px 5px; font-size: 10px;">3</span>
-                </button>
+            <button onclick="viewCart('#cart-modal')" class="fmld-pdg-8 btn c-btn fmld-zoom-out">
+                <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="10" cy="20.5" r="1"></circle>
+                    <circle cx="18" cy="20.5" r="1"></circle>
+                    <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"></path>
+                </svg>
+                <span
+                    style="background: var(--accent); border-radius: 18px; color: white; padding: 3px 5px; font-size: 10px;">3</span>
+            </button>
+        </div>
+    </header>
+    <!-- nav panel -->
+    <nav class="modal-parent" id="nav-modal">
+        <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
+        <!-- navigation -->
+        <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
+            <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./products.html">Produits</a>
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./categories.html">Catégories</a>
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./account.html">Compte</a>
+                <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
             </div>
-        </header>
-        <!-- nav panel -->
-        <nav class="modal-parent" id="nav-modal">
-            <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
-            <!-- navigation -->
-            <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
-                <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="../index.html">Acceuil</a>
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./products.html">Produits</a>
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./categories.html">Catégories</a>
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./account.html">Compte</a>
-                    <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
-                </div>
 
-                <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right"
-                    style="position: absolute; top: 16px; right: 16px;">×</button>
-            </div>
-        </nav>
-
+            <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right"
+                style="position: absolute; top: 16px; right: 16px;">×</button>
+        </div>
+    </nav>
+    <main id="root">
         <div class="flex items-center justify-between gap-1 fmld-width-100- fmld-mrg fmld-pdg-8">
             <h2 class="fmld-pdg-8- fmld-xxlarge">Dashboard</h2>
             <span class="fmld-pdg-8-">
@@ -104,7 +103,7 @@
             </span>
         </div>
 
-        <div class="grid-repeat items-center gap-1 fmld-mrg">
+        <div class="grid-repeat items-center gap-2 fmld-mrg fmld-pdg-8">
             <dl class="border-light fmld-pdg-16">
                 <dd class="flex items-center justify-between fmld-pdg-bottom">Produits
                     <svg class="text-gray-dark" id="store-front" xml:space="preserve" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 4H4v2h16zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6zm-9 4H6v-4h6z"></path></svg>
@@ -130,7 +129,7 @@
             </dl>
         </div>
 
-        <div class="grid-repeat items-center gap-1 fmld-mrg">
+        <div class="grid-repeat items-center gap-1 fmld-mrg fmld-pdg-8">
             <dl class="border-light fmld-pdg-16">
                 <dd class="flex items-center justify-between fmld-pdg-bottom">Ventes du mois
                     <svg class="text-gray-dark" id="bar-chart" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M4 9h4v11H4zm12 4h4v7h-4zm-6-9h4v16h-4z"></path></svg>
@@ -139,7 +138,7 @@
             </dl>
         </div>
 
-        <div class="grid-repeat items-center gap-1 fmld-mrg fmld-pdg-top">
+        <div class="grid-repeat items-center gap-1 fmld-mrg fmld-pdg-8">
             <div class="border-light fmld-pdg-left fmld-pdg-right">
                 <h3 class="">Top produits</h3>
                 <div class="">
@@ -204,7 +203,7 @@
             </div>
         </div>
 
-        <div class="grid-c-1 gap-1 fmld-mrg-top fmld-mrg-bottom fmld-mrg fmld-pdg-top fmld-pdg-bottom">
+        <div class="grid-c-1 gap-1 fmld-mrg-top fmld-mrg-bottom fmld-mrg fmld-pdg-8">
             <div class="border-light fmld-pdg-left fmld-pdg-right">
                 <h3 class="">Produits récents</h3>
                 <div class="flex items-center justify-between gap-1 border-top-light fmld-pdg-top">
@@ -307,48 +306,48 @@
         <!-- modals -->
         <aside>
         </aside>
-        <!-- footer -->
-        <footer class="fmld-pdg-16" style="background: var(--secondary); position: relative; bottom: 0px;">
-            <div class="grid-repeat gap-1">
+    </main>
+    <!-- footer -->
+    <footer class="fmld-pdg-16" style="background: var(--secondary); position: relative; bottom: 0px;">
+        <div class="grid-repeat gap-1">
 
-                <!-- Brand -->
-                <div>
-                    <a href="../index.html">
-                    <img style="border-radius: 45px" src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo" class="white flex items-start fmld-pdg">
-                </a>
-                    <p class="mt-2 text-sm text-gray-500">Frameload Shop</p>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="">Liens rapides</h4>
-                    <ul class="fmld-list-nobullet fmld-pdg-0">
-                        <li class="fmld-pdg-bottom"><a href="index.html">Accueil</a></li>
-                        <li class="fmld-pdg-bottom"><a href="./products.html">Produits</a></li>
-                        <li class="fmld-pdg-bottom"><a href="./categories.html">Catégories</a></li>
-                        <li class="fmld-pdg-bottom"><a href="./account.html">Mon compte</a></li>
-                        <li class="fmld-pdg-bottom"><a href="#">Panier</a></li>
-                    </ul>
-                </div>
-
-                <!-- Socials -->
-                <div>
-                    <h4 class="">Contacts</h4>
-                    <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px"
-                            width="20px"> <a href="mailto:contact@frameloadshop.com" class="">
-                            contact@frameloadshop.com</a></p>
-                    <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px"
-                            width="20px"> Téléphone: <a href="tel:+221707981934" class="">+0123456789</a></p>
-                    <p><img class="inline-block" src="../images/assets/pin.png" alt="emoji phone" height="20px"
-                            width="20px"> Adresse: Dakar, Senegal</p>
-                </div>
+            <!-- Brand -->
+            <div>
+                <a href="../index.html">
+                <img style="border-radius: 45px" src="../images/assets/cart.svg" width="25px" height="25px" alt="app logo" class="white flex items-start fmld-pdg">
+            </a>
+                <p class="mt-2 text-sm text-gray-500">Frameload Shop</p>
             </div>
 
-            <div class="fmld-center ">
-                © 2026 Frameload Shop. All rights reserved.
+            <!-- Quick Links -->
+            <div>
+                <h4 class="">Liens rapides</h4>
+                <ul class="fmld-list-nobullet fmld-pdg-0">
+                    <li class="fmld-pdg-bottom"><a href="index.html">Accueil</a></li>
+                    <li class="fmld-pdg-bottom"><a href="./products.html">Produits</a></li>
+                    <li class="fmld-pdg-bottom"><a href="./categories.html">Catégories</a></li>
+                    <li class="fmld-pdg-bottom"><a href="./account.html">Mon compte</a></li>
+                    <li class="fmld-pdg-bottom"><a href="#">Panier</a></li>
+                </ul>
             </div>
-        </footer>
-    </div>
+
+            <!-- Socials -->
+            <div>
+                <h4 class="">Contacts</h4>
+                <p><img class="inline-block" src="../images/assets/email.svg" alt="emoji email" height="20px"
+                        width="20px"> <a href="mailto:contact@frameloadshop.com" class="">
+                        contact@frameloadshop.com</a></p>
+                <p><img class="inline-block" src="../images/assets/phone.svg" alt="emoji phone" height="20px"
+                        width="20px"> Téléphone: <a href="tel:+221707981934" class="">+0123456789</a></p>
+                <p><img class="inline-block" src="../images/assets/pin.png" alt="emoji phone" height="20px"
+                        width="20px"> Adresse: Dakar, Senegal</p>
+            </div>
+        </div>
+
+        <div class="fmld-center ">
+            © 2026 Frameload Shop. All rights reserved.
+        </div>
+    </footer>
 </body>
 
 </html>
