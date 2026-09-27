@@ -220,7 +220,10 @@ dd {
     }
 }
 
-.cs-link,
+input[type="checkbox"]{
+    width: 18px;height: 18px;
+}
+
 a {
     text-decoration: none;
     color: var(--black) !important;
@@ -717,6 +720,10 @@ button,
 
     .grid-c-half {
         grid-template-columns: 48% 48%;
+    }
+    
+    .grid-c-third {
+        grid-template-columns: 20% 76%;
     }
 
     .grid-c-3 {
