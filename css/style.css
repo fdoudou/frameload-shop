@@ -115,11 +115,15 @@ dd {
 }
 
 .fmld-start {
-    text-align:start;
+    text-align:left;
 }
 
 .fmld-center {
     text-align: center;
+}
+
+.fmld-right {
+    text-align:right;
 }
 
 .fmld-justify {
