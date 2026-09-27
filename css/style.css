@@ -72,6 +72,10 @@ dd {
     color: var(--gray-dark);
 }
 
+.text-gray-light {
+    color: var(--gray-light);
+}
+
 .text-gray {
     color: var(--gray);
 }
