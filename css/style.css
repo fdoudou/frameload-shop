@@ -52,6 +52,10 @@ dd {
     background: var(--black);
 }
 
+.gray {
+    background: var(--gray);
+}
+
 .gray-light {
     background: var(--gray-light);
 }
