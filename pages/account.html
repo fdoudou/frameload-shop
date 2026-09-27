@@ -20,8 +20,7 @@
 
 <body class="container">
     <!-- debut header -->
-    <header class="flex items-center justify-between"
-        style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
+    <header class="flex items-center justify-between" style="background: var(--secondary); z-index: 9; position: sticky; top: 0px; height: 50px;">
         <a style="border-radius: 45px" class="fmld-mrg-left fmld-hide-mobile white flex items-start fmld-pdg"
             href="../index.html">
             <img src="../images/assets/cart.svg" alt="" width="30px" height="30px">
@@ -95,11 +94,11 @@
     </nav>
     <main id="root">
         <div class="flex items-center justify-between gap-1 fmld-width-100- fmld-mrg fmld-pdg-8">
-            <h2 class="fmld-pdg-8- fmld-xxlarge">Dashboard</h2>
+            <h2 class="fmld-pdg-8- fmld-xxlarge">Mon compte</h2>
             <span class="fmld-pdg-8-">
-                <a href="./pages/login.html" class="btn fmld-pdg-10 fmld-pdg-left fmld-zoom-out fmld-medium">
-                    Se déconnecter
-                </a>
+                <span class="fmld-pdg-10 fmld-pdg-left fmld-medium">
+                    Bonjour Doudou
+                </span>
             </span>
         </div>
 
@@ -129,75 +128,64 @@
             </dl>
         </div>
 
-        <div class="grid-repeat items-center gap-1 fmld-mrg fmld-pdg-8">
-            <dl class="border-light fmld-pdg-16">
-                <dd class="flex items-center justify-between fmld-pdg-bottom">Ventes du mois
-                    <svg class="text-gray-dark" id="bar-chart" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M4 9h4v11H4zm12 4h4v7h-4zm-6-9h4v16h-4z"></path></svg>
-                </dd>
-                <dt class="text-gray-dark fmld-bold fmld-xlarge">2 450 000 FCFA</dt>
-            </dl>
-        </div>
-
-        <div class="grid-repeat items-center gap-1 fmld-mrg fmld-pdg-8">
+        <div class="grid-repeat items-center- gap-1 fmld-mrg fmld-pdg-8">
             <div class="border-light fmld-pdg-left fmld-pdg-right">
-                <h3 class="">Top produits</h3>
+                <h3 class="">Informations personnelles</h3>
                 <div class="">
-                    <meter class="fmld-width-100" id="" value="30" min="0" max="100"></meter>
                     <p class="flex items-center justify-between fmld-pdg-bottom">
-                        <label class="" for="">Bracelet en or </label>
-                        <span class="text-gray-dark">30 ventes</span>
+                        <label class="" for="">Prénom</label>
+                        <span class="text-gray-dark" contenteditable="true">Doudou</span>
                     </p>
                 </div>
                 <div class="">
-                    <meter class="fmld-width-100" id="" value="20" min="0" max="100"></meter>
                     <p class="flex items-center justify-between fmld-pdg-bottom">
-                        <label class="" for="">Collier en argent </label>
-                        <span class="text-gray-dark">20 ventes</span>
+                        <label class="" for="">Nom</label>
+                        <span class="text-gray-dark" contenteditable="true">Fall</span>
                     </p>
                 </div>
                 <div class="">
-                    <meter class="fmld-width-100" id="" value="40" min="0" max="100"></meter>
                     <p class="flex items-center justify-between fmld-pdg-bottom">
-                        <label class="" for="">Foulard en soie </label>
-                        <span class="text-gray-dark">40 ventes</span>
+                        <label class="" for="">Adresse email</label>
+                        <span class="text-gray-dark" contenteditable="true">contact@frameloadshop.com</span>
                     </p>
                 </div>
                 <div class="">
-                    <meter class="fmld-width-100" id="" value="10" min="0" max="100"></meter>
                     <p class="flex items-center justify-between fmld-pdg-bottom">
-                        <label class="" for="">Bague en diamant </label>
-                        <span class="text-gray-dark">10 ventes</span>
+                        <label class="" for="">Numéro de téléphone</label>
+                        <span class="text-gray-dark" contenteditable="true">+0123456789</span>
+                    </p>
+                </div>
+                <div class="">
+                    <p class="flex items-center justify-between fmld-pdg-bottom">
+                        <label class="" for="">Mot de passe</label>
+                        <span class="text-gray-dark" contenteditable="true">*********</span>
                     </p>
                 </div>
             </div>
             <div class="border-light fmld-pdg-left fmld-pdg-right">
-                <h3>Top caégories</h3>
+                <h3>Adresses et paiements</h3>
                 <div class="">
-                    <meter class="fmld-width-100" id="" value="30" min="0" max="100"></meter>
                     <p class="flex items-center justify-between fmld-pdg-bottom">
-                        <label class="" for="">Bracelets </label>
-                        <span class="text-gray-dark">30 ventes</span>
+                        <label class="" for="">Adresse 1</label>
+                        <span class="text-gray-dark" contenteditable="true">Almadies</span>
                     </p>
                 </div>
                 <div class="">
-                    <meter class="fmld-width-100" id="" value="20" min="0" max="100"></meter>
                     <p class="flex items-center justify-between fmld-pdg-bottom">
-                        <label class="" for="">Colliers </label>
-                        <span class="text-gray-dark">20 ventes</span>
+                        <label class="" for="">Adresse 2</label>
+                        <span class="text-gray-dark" contenteditable="true">Point E</span>
                     </p>
                 </div>
                 <div class="">
-                    <meter class="fmld-width-100" id="" value="40" min="0" max="100"></meter>
                     <p class="flex items-center justify-between fmld-pdg-bottom">
-                        <label class="" for="">Foulards </label>
-                        <span class="text-gray-dark">40 ventes</span>
+                        <label class="" for="">Ville</label>
+                        <span class="text-gray-dark" contenteditable="true">Dakar</span>
                     </p>
                 </div>
                 <div class="">
-                    <meter class="fmld-width-100" id="" value="10" min="0" max="100"></meter>
                     <p class="flex items-center justify-between fmld-pdg-bottom">
-                        <label class="" for="">Bagues </label>
-                        <span class="text-gray-dark">10 ventes</span>
+                        <label class="" for="">Carte bancaire</label>
+                        <span class="text-gray-dark" contenteditable="true">********7856</span>
                     </p>
                 </div>
             </div>
@@ -205,19 +193,19 @@
 
         <div class="grid-c-1 gap-1 fmld-mrg-top fmld-mrg-bottom fmld-mrg fmld-pdg-8">
             <div class="border-light fmld-pdg-left fmld-pdg-right">
-                <h3 class="">Produits récents</h3>
+                <h3 class="">Mes commandes</h3>
                 <div class="flex items-center justify-between gap-1 border-top-light fmld-pdg-top">
                     <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Nom</span>
-                    <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Stocks</span>
+                    <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">N* Commande</span>
                     <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Prix</span>
-                    <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Commandes</span>
+                    <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Quantité</span>
                     <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Actions</span>
                 </div>
                 <div class="">
                     <div class="flex items-center justify-between gap-1 border-top-light" style="height: 75px;">
                         <span class="fmld-mrg-tb fmld-medium">Bracelets</span>
 
-                        <span class="fmld-mrg-tb fmld-medium">400</span>
+                        <span class="fmld-mrg-tb fmld-medium">CMD-001</span>
 
                         <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
                         
@@ -233,7 +221,7 @@
                     <div class="flex items-center justify-between gap-1 border-top-light-" style="height: 75px;">
                         <span class="fmld-mrg-tb fmld-medium">Colliers</span>
 
-                        <span class="fmld-mrg-tb fmld-medium">500</span>
+                        <span class="fmld-mrg-tb fmld-medium">CMD-002</span>
 
                         <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
 
@@ -249,7 +237,7 @@
                     <div class="flex items-center justify-between gap-1 border-top-light-" style="height: 75px;">
                         <span class="fmld-mrg-tb fmld-medium">Foulards</span>
 
-                        <span class="fmld-mrg-tb fmld-medium">300</span>
+                        <span class="fmld-mrg-tb fmld-medium">CMD-003</span>
 
                         <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
 
@@ -266,7 +254,7 @@
                     <div class="flex items-center justify-between gap-1 border-top-light-" style="height: 75px;">
                         <span class="fmld-mrg-tb fmld-medium">Parrures</span>
 
-                        <span class="fmld-mrg-tb fmld-medium">250</span>
+                        <span class="fmld-mrg-tb fmld-medium">CMD-004</span>
 
                         <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
                         
@@ -285,7 +273,7 @@
                     <div class="flex items-center justify-between gap-1 border-top-light-" style="height: 75px;">
                         <span class="fmld-mrg-tb fmld-medium">Bagues</span>
 
-                        <span class="fmld-mrg-tb fmld-medium">240</span>
+                        <span class="fmld-mrg-tb fmld-medium">CMD-005</span>
 
                         <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
 
@@ -302,11 +290,82 @@
                 </div> 
             </div>
         </div>
-        
-        <!-- modals -->
-        <aside>
-        </aside>
     </main>
+    <!-- modals -->
+    <aside>
+        <div class="modal-parent" id="cart-modal">
+                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
+                <div class="fmld-modal fmld-anim-right">
+                    <h4 class="flex items-center justify-between gap-1 fmld-pdg-8">
+                        <span class="fmld-large fmld-bold">
+                            Mon panier
+                            <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
+                        </span>
+                        <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                    </h4>
+                    <div class="fmld-pdg-8" style="overflow-y: scroll;">
+                        <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+
+                            <span >
+                                <button class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-1 fmld-pdg-8">
+                        <a href="./cart.html">
+                            <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
+                        </a>
+                        <a href="./checkout.html">
+                            <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <div class="modal-parent" id="search-modal">
+                <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
+                <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">
+                    <h4 class="flex items-center justify-between gap-1">
+                        <span class="fmld-large fmld-bold">Rechercher quelquechose</span>
+                        <button onclick="viewCart('#search-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                    </h4>
+                    <input class="fmld-width-100 fmld-pdg-8 fmld-mrg-right  border-gray" type="search" placeholder="Tapez ici pour rechercher" value=""
+                        style="height: 45px;">
+                    <div class="fmld-mrg-16">
+                        <h2 class="fmld-mrg-bottom fmld-pdg-8">Vos resultats de recherches s'afficheront ici!</h2>
+                    </div>
+                </div>
+        </div>
+    </aside>
     <!-- footer -->
     <footer class="fmld-pdg-16" style="background: var(--secondary); position: relative; bottom: 0px;">
         <div class="grid-repeat gap-1">
