@@ -96,15 +96,15 @@
         <section class="fmld-mrg-8 fmld-pdg-8">
             <h2 class="fmld-center fmld-pdg-8">Nos différents produits</h2>
 
-            <div class="grid-c-third gap-1 justify-center">
+            <div class="grid-c-third gap-2 justify-center">
                 <form method="get" action="./categories.html" class="">
-                    <label class="fmld-pdg-8" for="name">Rechercher un produit</label>
-                    <input type="search" name="name" class="border-light fmld-width-100 fmld-pdg-8 fmld-mrg-bottom" id="name" placeholder="rechercher un produit">
+                    <label class="fmld-pdg-bottom" for="name">Rechercher un produit</label>
+                    <input type="search" name="name" class="border-light fmld-width-100 fmld-pdg-8 fmld-mrg-tb" id="name" placeholder="rechercher un produit">
                         
-                    <div class="grid-m-2 fmld-width-100 ">
+                    <div class="grid-m-2 fmld-width-100">
                         <div class="fmld-mrg-bottom">
-                            <label class="fmld-pdg-8" for="category">Filtrer par categorie</label>
-                            <select name="category" class="border-light fmld-width-100 fmld-pdg-8" id="category">
+                            <label class="" for="category">Filtrer par categorie</label>
+                            <select name="category" class="border-light fmld-width-100 fmld-pdg-8 fmld-mrg-top" id="category">
                                 <option label="Filtrer par categorie" class="fmld-pdg-8" for="" value="category" selected>Filtrer par categorie</option>
                                 <option class="fmld-pdg-8" for="" value="bracelets">Toutes</option>
                                 <option class="fmld-pdg-8" for="" value="bracelets">bracelets</option>
@@ -116,30 +116,30 @@
                         </div>
                         
                         <div class="">
-                            <label class="fmld-pdg-8" for="price">Filtrer par prix</label>
+                            <label class="" for="price">Filtrer par prix</label>
                             <!-- for pc/tablets -->
-                            <div class="flex items-center wrap gap-1 fmld-hide-mobile fmld-pdg-8">
+                            <div class="flex items-center wrap gap-1 fmld-hide-mobile fmld-mrg-tb">
                                 <label class="fmld-width-100">
-                                    <input type="radio" name="price" class="fmld-pdg-8" for="" value="plus ancien">Tous
+                                    <input type="radio" name="price" class="fmld-pdg-8" value="">Tous
                                 </label>
                                 <label class="fmld-width-100">
-                                    <input type="radio" name="price" class="fmld-pdg-8" for="" value="plus recents">Moins de 50 000 FCFA
+                                    <input type="radio" name="price" class="fmld-pdg-8" value="49000">Moins de 50 000 FCFA
                                 </label>
                                 <label class="fmld-width-100">
-                                    <input type="radio" name="price" class="fmld-pdg-8" for="" value="cette semaine">50 000 – 150 000 FCFA
+                                    <input type="radio" name="price" class="fmld-pdg-8" value="150000">50 000 – 150 000 FCFA
                                 </label>
                                 <label class="fmld-width-100">
-                                    <input type="radio" name="price" class="fmld-pdg-8" for="" value="ce mois-ci">Plus de 150 000 FCFA
+                                    <input type="radio" name="price" class="fmld-pdg-8" value="151000">Plus de 150 000 FCFA
                                 </label>
                             </div>
                             <!-- for mobile -->
-                            <select class="border-light fmld-width-100 fmld-hide-nomobile fmld-pdg-8" id="price">
-                                <option class="fmld-pdg-8" for="" value="category" selected>Filtrer par prix</option>
-                                <option class="fmld-pdg-8" for="" value="plus ancien">Tous</option>
-                                <option class="fmld-pdg-8" for="" value="plus recents">Moins de 50 000 FCFA</option>
-                                <option class="fmld-pdg-8" for="" value="cette semaine">50 000 – 150 000 FCFA</option>
-                                <option class="fmld-pdg-8" for="" value="ce mois-ci">Plus de 150 000 FCFA</option>
-                                <option class="fmld-pdg-8" for="" value="ctte année">---</option>
+                            <select class="border-light fmld-width-100 fmld-hide-nomobile fmld-pdg-8 fmld-mrg-top" id="price">
+                                <option class="fmld-pdg-8" value="" selected>Filtrer par prix</option>
+                                <option class="fmld-pdg-8" value="">Tous</option>
+                                <option class="fmld-pdg-8" value="49000">Moins de 50 000 FCFA</option>
+                                <option class="fmld-pdg-8" value="150000">50 000 – 150 000 FCFA</option>
+                                <option class="fmld-pdg-8" value="151000">Plus de 150 000 FCFA</option>
+                                <option class="fmld-pdg-8" value="151000">---</option>
                             </select>
                         </div>
                     </div>
