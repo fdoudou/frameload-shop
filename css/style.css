@@ -244,6 +244,18 @@ input[type="checkbox"]{
     width: 18px;height: 18px;
 }
 
+select {
+    /* -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) 50%;
+    background-size: 16px; */
+    border-radius: 0px;
+    padding: 8px;
+}
+
 a {
     text-decoration: none;
     color: var(--black);
