@@ -7,6 +7,7 @@
     --gray: #bbb;
     --gray-light: #eee;
     --gray-dark: #333;
+    --red: #f44336;
 }
 
 ::-webkit-scrollbar {
@@ -86,6 +87,10 @@ dd {
 
 .text-gray {
     color: var(--gray);
+}
+
+.text-red, .invalid-feedback {
+    color: var(--red);
 }
 
 .border-primary {
