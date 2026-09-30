@@ -394,6 +394,7 @@ a {
     column-gap: 64px;
 }
 
+
 .fmld-modal {
     position: fixed;
     z-index: 39;
@@ -625,7 +626,7 @@ button,
 }
 
 .justify-center {
-    justify-content: center
+    justify-content: center;
 }
 
 .justify-between {
@@ -660,6 +661,10 @@ button,
 
 .gap-2 {
     gap: 20px 20px !important;
+}
+
+.grid-center {
+    justify-items: center;
 }
 
 /**Begin Image Scrollsnap**/
@@ -767,10 +772,6 @@ button,
 
     .grid-c-4 {
         grid-template-columns: auto auto auto auto;
-    }
-
-    .grid-center {
-        justify-items: center;
     }
 
     .product-img {
