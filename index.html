@@ -310,48 +310,48 @@
                             <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
                         </h4>
                         <div class="fmld-pdg-8" style="overflow-y: scroll;">
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <div id="item-1" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
                                 <a href="./pages/product-detail.html">
-                                    <img alt="" src="images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
+                                    <img alt="" src="./images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
                                 </a>
                                 <a class="fmld-mrg-tb fmld-medium" href="./pages/product-detail.html">bijou g</a>
         
                                 <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
-
+    
                                 <span >
-                                    <button class="c-btn fmld-large">×</button>
+                                    <button type="button" onclick="hideElement('#item-1')" class="c-btn fmld-large">×</button>
                                 </span>
                             </div>
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <div id="item-2" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
                                 <a href="./pages/product-detail.html">
-                                    <img alt="" src="images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
+                                    <img alt="" src="./images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
                                 </a>
                                 <a class="fmld-mrg-tb fmld-medium" href="./pages/product-detail.html">bijou g</a>
         
                                 <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
                                 
                                 <span >
-                                    <button class="c-btn fmld-large">×</button>
+                                    <button type="button" onclick="hideElement('#item-2')" class="c-btn fmld-large">×</button>
                                 </span>
                             </div>
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <div id="item-3" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
                                 <a href="./pages/product-detail.html">
-                                    <img alt="" src="images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
+                                    <img alt="" src="./images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
                                 </a>
                                 <a class="fmld-mrg-tb fmld-medium" href="./pages/product-detail.html">bijou g</a>
         
                                 <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
                                 
                                 <span >
-                                    <button class="c-btn fmld-large">×</button>
+                                    <button type="button" onclick="hideElement('#item-3')" class="c-btn fmld-large">×</button>
                                 </span>
                             </div>
                         </div>
                         <div class="flex items-center justify-between gap-1 fmld-pdg-8">
-                            <a href="./pages/cart.html">
+                            <a href="./cart.html">
                                 <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
                             </a>
-                            <a href="./pages/checkout.html">
+                            <a href="./checkout.html">
                                 <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
                             </a>
                         </div>

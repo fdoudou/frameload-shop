@@ -90,25 +90,25 @@
     </nav>
     <main id="main" class="fmld-mrg-tb">
         <div class="grid-c-1 gap-2 justify-center items-center fmld-height-80vh">
-            <form method="post" action="./login.html" class="border-light- fmld-mrg-bottom fmld-pdg-left fmld-pdg-right">
+            <form id="form" method="post" action="./login.html" class="border-light- fmld-mrg-bottom fmld-pdg-left fmld-pdg-right">
                 <h1 class="fmld-center">Connexion</h1>
-                <div class="fmld-pdg-bottom fmld-width-100">
+                <div class="fmld-pdg-bottom fmld-width-100 form-control">
                     <label for="username" class="form-label fmld-medium fmld-pdg-bottom">Adresse email</label>
                     <div class="fmld-width-100">
                         <input type="email" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-10 fmld-mrg-top" id="username" placeholder="Email" required>
-                        <div class="fmld-invalid-feedback fmld-small fmld-pdg">L'adress email de votre compte.</div>
+                        <div class="invalid-feedback fmld-small fmld-pdg">L'adress email de votre compte.</div>
                     </div>
                 </div>
-                <div class="fmld-pdg-bottom fmld-width-100">
+                <div class="fmld-pdg-bottom fmld-width-100 form-control">
                     <label for="password" class="form-label fmld-medium fmld-pdg-bottom">Mot de passe</label>
                     <div class="fmld-width-100">
                         <input minlength="6" type="password" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-10 fmld-mrg-top" id="password" placeholder="Mot de passe" required>
-                        <div class="fmld-invalid-feedback fmld-small fmld-pdg">Le mot de passe de votre compte.</div>
+                        <div class="invalid-feedback fmld-small fmld-pdg">Le mot de passe de votre compte.</div>
                     </div>
                 </div>
                 <div class="fmld-width-100 fmld-pdg-bottom">
-                    <button class="fmld-width-100 fmld-width-300-l btn fmld-medium fmld-pdg-16 fmld-zoom-out" type="submit">Se connecter</button>
-                    </div>
+                    <button type="submit" onclick="verifyForm()" class="fmld-width-100 fmld-width-300-l btn fmld-medium fmld-pdg-16 fmld-zoom-out">Se connecter</button>
+                </div>
                 <div class="fmld-center fmld-width-100 fmld-pdg-tb">
                     <p>Vous n'avez pas de compte? <a class="text-primary" href="./register.html">Inscrivez-vous</a> </p>
                 </div>
@@ -118,63 +118,63 @@
         <!-- modals -->
         <aside>
             <div class="modal-parent" id="cart-modal">
-                    <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
-                    <div class="fmld-modal fmld-anim-right">
-                        <h4 class="flex items-center justify-between gap-1 fmld-pdg-8">
-                            <span class="fmld-large fmld-bold">
-                                Mon panier
-                                <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
-                            </span>
-                            <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
-                        </h4>
-                        <div class="fmld-pdg-8" style="overflow-y: scroll;">
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
+                <div class="fmld-modal fmld-anim-right">
+                    <h4 class="flex items-center justify-between gap-1 fmld-pdg-8">
+                        <span class="fmld-large fmld-bold">
+                            Mon panier
+                            <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
+                        </span>
+                        <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                    </h4>
+                    <div class="fmld-pdg-8" style="overflow-y: scroll;">
+                        <div id="item-1" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
 
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
-                                
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
-                                
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
+                            <span >
+                                <button type="button" onclick="hideElement('#item-1')" class="c-btn fmld-large">×</button>
+                            </span>
                         </div>
-                        <div class="flex items-center justify-between gap-1 fmld-pdg-8">
-                            <a href="./cart.html">
-                                <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
+                        <div id="item-2" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
                             </a>
-                            <a href="./checkout.html">
-                                <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-2')" class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div id="item-3" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
                             </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-3')" class="c-btn fmld-large">×</button>
+                            </span>
                         </div>
                     </div>
+                    <div class="flex items-center justify-between gap-1 fmld-pdg-8">
+                        <a href="./cart.html">
+                            <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
+                        </a>
+                        <a href="./checkout.html">
+                            <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
+                        </a>
+                    </div>
                 </div>
+            </div>
             <div class="modal-parent" id="search-modal">
                     <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
                     <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">

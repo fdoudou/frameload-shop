@@ -202,63 +202,63 @@
         <!-- modals -->
         <aside>
             <div class="modal-parent" id="cart-modal">
-                    <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
-                    <div class="fmld-modal fmld-anim-right">
-                        <h4 class="flex items-center justify-between gap-1 fmld-pdg-8">
-                            <span class="fmld-large fmld-bold">
-                                Mon panier
-                                <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
-                            </span>
-                            <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
-                        </h4>
-                        <div class="fmld-pdg-8" style="overflow-y: scroll;">
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
+                <div class="fmld-modal fmld-anim-right">
+                    <h4 class="flex items-center justify-between gap-1 fmld-pdg-8">
+                        <span class="fmld-large fmld-bold">
+                            Mon panier
+                            <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
+                        </span>
+                        <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                    </h4>
+                    <div class="fmld-pdg-8" style="overflow-y: scroll;">
+                        <div id="item-1" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
 
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
-                                
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
-                                
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
+                            <span >
+                                <button type="button" onclick="hideElement('#item-1')" class="c-btn fmld-large">×</button>
+                            </span>
                         </div>
-                        <div class="flex items-center justify-between gap-1 fmld-pdg-8">
-                            <a href="./cart.html">
-                                <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
+                        <div id="item-2" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
                             </a>
-                            <a href="./checkout.html">
-                                <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-2')" class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div id="item-3" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
                             </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-3')" class="c-btn fmld-large">×</button>
+                            </span>
                         </div>
                     </div>
+                    <div class="flex items-center justify-between gap-1 fmld-pdg-8">
+                        <a href="./cart.html">
+                            <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
+                        </a>
+                        <a href="./checkout.html">
+                            <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
+                        </a>
+                    </div>
                 </div>
+            </div>
             <div class="modal-parent" id="search-modal">
                     <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
                     <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">

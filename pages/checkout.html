@@ -97,16 +97,16 @@
 
         <div id="checkout-form">
             <h1 class="fmld-mrg-tb fmld-pdg-16 fmld-xxlarge">Finaliser ma commander</h1>
-            <form action="./checkout.html" method="get" class="grid-c-half gap-2 justify-center fmld-mrg fmld-pdg-bottom">
+            <form onsubmit="showElement('#confirm-modal');hideElement('#checkout-form')" id="form" action="./checkout.html" method="get" class="grid-c-half gap-2 justify-center fmld-mrg fmld-pdg-bottom">
                 <div class="">
-                    <div class="fmld-pdg-bottom fmld-width-100">
+                    <div class="fmld-pdg-bottom fmld-width-100 form-control">
                         <label for="lastname" class="form-label fmld-bold fmld-small fmld-left">Nom </label>
                         <div class="fmld-width-100 fmld-mrg-top">
                             <input type="text" class="border-light fmld-width-100 fmld-pdg-10" id="lastname" placeholder="Nom" required>
                             <div class="invalid-feedback fmld-small fmld-pdg">Votre nom.</div>
                         </div>
                     </div>
-                    <div class="fmld-pdg-bottom fmld-width-100">
+                    <div class="fmld-pdg-bottom fmld-width-100 form-control">
                         <label for="firstname" class="form-label fmld-bold fmld-small fmld-left">Prénom</label>
                         <div class="fmld-width-100 fmld-mrg-top">
                             <input minlength="6" type="text"
@@ -115,14 +115,14 @@
                             <div class="invalid-feedback fmld-small fmld-pdg">Votre prénom.</div>
                         </div>
                     </div>
-                    <div class="fmld-pdg-bottom fmld-width-100">
+                    <div class="fmld-pdg-bottom fmld-width-100 form-control">
                         <label for="email" class="form-label fmld-bold fmld-small fmld-pdg-top fmld-left">Email</label>
                         <div class="fmld-width-100 fmld-mrg-top">
                             <input type="email" class="border-light fmld-width-100 fmld-pdg-10" id="email" placeholder="Email" required>
                             <div class="invalid-feedback fmld-small fmld-pdg">Adresse email vers laquelle nous vous enverrons les notifications.</div>
                         </div>
                     </div>
-                    <div class="fmld-pdg-bottom fmld-width-100">
+                    <div class="fmld-pdg-bottom fmld-width-100 form-control">
                         <label for="phonenumber"
                             class="form-label fmld-bold fmld-small fmld-pdg-bottom fmld-left">Numéro de téléphone</label>
                         <div class="fmld-width-100 fmld-mrg-top">
@@ -133,7 +133,7 @@
                             <div class="invalid-feedback fmld-small fmld-pdg">Numéro sur lequel nous pouvons vous joindre.</div>
                         </div>
                     </div>
-                    <div class="fmld-pdg-bottom fmld-width-100">
+                    <div class="fmld-pdg-bottom fmld-width-100 form-control">
                         <label for="phonenumber"
                             class="form-label fmld-bold fmld-small fmld-pdg-bottom fmld-left">Adresse </label>
                         <div class="fmld-width-100 fmld-mrg-top">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 
-                <div class="gray-light0 border-wave-light fmld-pdg-left fmld-pdg-right fmld-pdg-bottom"style="height: max-content;">
+                <div class="gray-light0 border-wave-light fmld-pdg-left fmld-pdg-right fmld-pdg-bottom form-control"style="height: max-content;">
                     <h4 class="fmld-mrg-tb fmld-pdg-top fmld-xxlarge-">Vous avez un code promo? Saisissez-le pour bénéficier d'une réduction!</h4>
                     <div class="flex items-center justify-between gap-1 fmld-pdg-bottom">
                         <input type="number" minlength="4" maxlength="4" pattern="^\d+$" inputmode="numeric" class="border-light fmld-width-50-l fmld-pdg-10" id="code" placeholder="Code promo - ex: 1234" required>
@@ -158,6 +158,7 @@
                             <button type="button" value="submit" class="btn fmld-pdg-10 fmld-zoom-out">Appliquer code promo</button>
                         </span>
                     </div>
+                    <div class="invalid-feedback fmld-small fmld-pdg">Votre code promo.</div>
 
                     <dl class="flex items-center justify-between gap-1 fmld-pdg-bottom fmld-pdg-top border-top-light">
                         <dt class="fmld-bold">Sous-total: </dt>
@@ -180,7 +181,7 @@
                     </dl>
                     
                     <div class="fmld-w-100 fmld-pdg-top fmld-pdg-bottom fmld-mrg-top">
-                        <button onclick="showElement('#confirm-modal');hideElement('#checkout-form')" class="fmld-width-100 fmld-medium fmld-bold btn fav-btn fmld-pdg-16 fmld-zoom-out"
+                        <button onclick="verifyForm()" class="fmld-width-100 fmld-medium fmld-bold btn fav-btn fmld-pdg-16 fmld-zoom-out"
                             type="submit">
                             Commander maintenant
                         </button>
@@ -219,63 +220,63 @@
         <!-- modals -->
         <aside>
             <div class="modal-parent" id="cart-modal">
-                    <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
-                    <div class="fmld-modal fmld-anim-right">
-                        <h4 class="flex items-center justify-between gap-1 fmld-pdg-8">
-                            <span class="fmld-large fmld-bold">
-                                Mon panier
-                                <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
-                            </span>
-                            <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
-                        </h4>
-                        <div class="fmld-pdg-8" style="overflow-y: scroll;">
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
+                <div class="fmld-modal fmld-anim-right">
+                    <h4 class="flex items-center justify-between gap-1 fmld-pdg-8">
+                        <span class="fmld-large fmld-bold">
+                            Mon panier
+                            <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
+                        </span>
+                        <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                    </h4>
+                    <div class="fmld-pdg-8" style="overflow-y: scroll;">
+                        <div id="item-1" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
 
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
-                                
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
-                            <div class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
-                                <a href="./product-detail.html">
-                                    <img alt="" src="../images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
-                                </a>
-                                <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
-        
-                                <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
-                                
-                                <span >
-                                    <button class="c-btn fmld-large">×</button>
-                                </span>
-                            </div>
+                            <span >
+                                <button type="button" onclick="hideElement('#item-1')" class="c-btn fmld-large">×</button>
+                            </span>
                         </div>
-                        <div class="flex items-center justify-between gap-1 fmld-pdg-8">
-                            <a href="./cart.html">
-                                <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
+                        <div id="item-2" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
                             </a>
-                            <a href="./checkout.html">
-                                <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-2')" class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div id="item-3" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
                             </a>
+                            <a class="fmld-mrg-tb fmld-medium" href="./product-detail.html">bijou g</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-3')" class="c-btn fmld-large">×</button>
+                            </span>
                         </div>
                     </div>
+                    <div class="flex items-center justify-between gap-1 fmld-pdg-8">
+                        <a href="./cart.html">
+                            <button class="btn fmld-pdg-16 fmld-zoom-out">Consulter mon panier</button>
+                        </a>
+                        <a href="./checkout.html">
+                            <button class="btn fmld-pdg-16 fmld-zoom-out secondary">Acheter maintenant</button>
+                        </a>
+                    </div>
                 </div>
+            </div>
             <div class="modal-parent" id="search-modal">
                     <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
                     <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">

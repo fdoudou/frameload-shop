@@ -22,3 +22,17 @@ function decreaseValue (element) {
 function increaseValue (element) {
     document.querySelector(element).stepUp();
 }
+
+function verifyForm() {
+    const inputElements = document.getElementById('form').getElementsByTagName("*");
+    
+    for (let z = 0; z < inputElements.length; z++) {
+        if (inputElements[z].tagName == 'INPUT' || inputElements[z].tagName == 'SELECT') {
+            if (inputElements[z].validity.valueMissing || !inputElements[z].validity.valid) {
+                inputElements[z].closest('.form-control').querySelector('.invalid-feedback').innerHTML = inputElements[z].validationMessage;
+            } else {
+                inputElements[z].closest('.form-control').querySelector('.invalid-feedback').innerHTML = inputElements[z].validationMessage;
+            }
+        }
+    }
+}
