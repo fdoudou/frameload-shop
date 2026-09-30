@@ -14,11 +14,12 @@
     <meta name="description"
         content="bijou est une web app d'e-commerce specialisée dans la vente de plante d'bijou vera. Elle a été concu avec React">
     <title>Frameload Shop - Mon Panier</title>
-    <script defer="defer" src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js"></script>
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
-<body class="container">
+<body onload="calcTotal()" class="container">
     <div id="root">
         <!-- debut header -->
         <header class="flex items-center justify-between"
@@ -107,12 +108,12 @@
                         </a>
                         <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou g</a>
 
-                        <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                        <span class="fmld-mrg-tb fmld-medium"><span class="price">6500</span>FCFA</span>
 
                         <span class="fmld-mrg-tb border-light">
-                            <button type="button" onclick="decreaseValue ('#product-1')" class="c-btn fmld-pdg-8 fmld-medium">-</button>
-                            <input type="number" value="3" min="1" max="15" id="product-1" class="fmld-medium fmld-pdg" style="width:40px; border: none;">
-                            <button type="button" onclick="increaseValue ('#product-1')" class="c-btn fmld-pdg-8 fmld-medium">+</button>
+                            <button type="button" onclick="decreaseValue ('#qty-1');calcTotal()" class="c-btn fmld-pdg-8 fmld-medium">-</button>
+                            <input type="number" value="3" min="1" max="15" id="qty-1" class="qty fmld-medium fmld-pdg" style="width:40px; border: none;" onchange="calcTotal()">
+                            <button type="button" onclick="increaseValue ('#qty-1');calcTotal()" class="c-btn fmld-pdg-8 fmld-medium">+</button>
                         </span>
                     </div>
                     <div id="product-2" class="flex items-center justify-between gap-1 border-top-light" style="height: 135px; width: 100%;">
@@ -124,12 +125,12 @@
                         </a>
                         <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
 
-                        <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                        <span class="fmld-mrg-tb fmld-medium"><span class="price">4800</span>FCFA</span>
 
                         <span class="fmld-mrg-tb border-light">
-                            <button type="button" onclick="decreaseValue ('#product-2')" class="c-btn fmld-pdg-8 fmld-medium">-</button>
-                            <input type="number" value="3" min="1" max="15" id="product-2" class="fmld-medium fmld-pdg" style="width:40px; border: none;">
-                            <button type="button" onclick="increaseValue ('#product-2')" class="c-btn fmld-pdg-8 fmld-medium">+</button>
+                            <button type="button" onclick="decreaseValue ('#qty-2');calcTotal()" class="c-btn fmld-pdg-8 fmld-medium">-</button>
+                            <input type="number" value="3" min="1" max="15" id="qty-2" class="qty fmld-medium fmld-pdg" style="width:40px; border: none;" onchange="calcTotal()">
+                            <button type="button" onclick="increaseValue ('#qty-2');calcTotal()" class="c-btn fmld-pdg-8 fmld-medium">+</button>
                         </span>
                     </div>
                     <div id="product-3" class="flex items-center justify-between gap-1 border-top-light" style="height: 135px; width: 100%;">
@@ -141,12 +142,12 @@
                         </a>
                         <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
 
-                        <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                        <span class="fmld-mrg-tb fmld-medium"><span class="price">5500</span>FCFA</span>
 
                         <span class="fmld-mrg-tb border-light">
-                            <button type="button" onclick="decreaseValue ('#product-3')" class="c-btn fmld-pdg-8 fmld-medium">-</button>
-                            <input type="number" value="3" min="1" max="15" id="product-3" class="fmld-medium fmld-pdg" style="width:40px; border: none;">
-                            <button type="button" onclick="increaseValue ('#product-3')" class="c-btn fmld-pdg-8 fmld-medium">+</button>
+                            <button type="button" onclick="decreaseValue ('#qty-3');calcTotal()" class="c-btn fmld-pdg-8 fmld-medium">-</button>
+                            <input type="number" value="3" min="1" max="15" id="qty-3" class="qty fmld-medium fmld-pdg" style="width:40px; border: none;" onchange="calcTotal()">
+                            <button type="button" onclick="increaseValue ('#qty-3');calcTotal()" class="c-btn fmld-pdg-8 fmld-medium">+</button>
                         </span>
                     </div>
                     <div id="product-4" class="flex items-center justify-between gap-1 border-top-light" style="height: 135px; width: 100%;">
@@ -158,19 +159,19 @@
                         </a>
                         <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
 
-                        <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                        <span class="fmld-mrg-tb fmld-medium"><span class="price">2500</span>FCFA</span>
 
                         <span class="fmld-mrg-tb border-light">
-                            <button type="button" onclick="decreaseValue ('#product-4')" class="c-btn fmld-pdg-8 fmld-medium">-</button>
-                            <input type="number" value="3" min="1" max="15" id="product-4" class="fmld-medium fmld-pdg" style="width:40px; border: none;">
-                            <button type="button" onclick="increaseValue ('#product-4')" class="c-btn fmld-pdg-8 fmld-medium">+</button>
+                            <button type="button" onclick="decreaseValue ('#qty-4');calcTotal()" class="c-btn fmld-pdg-8 fmld-medium">-</button>
+                            <input type="number" value="3" min="1" max="15" id="qty-4" class="qty fmld-medium fmld-pdg" style="width:40px; border: none;" onchange="calcTotal()">
+                            <button type="button" onclick="increaseValue ('#qty-4');calcTotal()" class="c-btn fmld-pdg-8 fmld-medium">+</button>
                         </span>
                     </div>
                 </div>
                 <div class="border-light fmld-pdg-left fmld-pdg-right fmld-pdg-bottom" style="height: max-content;">
                     <dl class="flex items-center justify-between gap-1 fmld-pdg-bottom">
                         <dt class="fmld-bold">Sous-total: </dt>
-                        <dd class="fmld-medium fmld-pdg">32300 FCFA</dd>
+                        <dd class="fmld-medium fmld-pdg"><span class="total">32300</span> FCFA</dd>
                     </dl>
                     
                     <dl class="flex items-center justify-between gap-1 fmld-mrg-tb fmld-pdg-bottom">
@@ -185,7 +186,7 @@
 
                     <dl class="flex items-center justify-between gap-1 fmld-pdg-8-">
                         <dt class="fmld-bold">Total panier: </dt>
-                        <dd class="fmld-large fmld-pdg">32300 FCFA</dd>
+                        <dd class="fmld-large fmld-pdg"><span class="total">32300</span> FCFA</dd>
                     </dl>
                         
                     <div class="flex items-center justify-between gap-1 fmld-pdg-top fmld-mrg-top">
