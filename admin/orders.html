@@ -95,27 +95,35 @@
             </div>
         </nav>
         <h2 class="fmld-mrg-tb fmld-pdg-16 fmld-xlarge">Gérez vos commandes</h2>
-        <div class="flex items-center gap-1 fmld-width-100 fmld-mrg fmld-pdg-8">
-            <input type="search" class="border-light fmld-width-100- fmld-width-300-l fmld-pdg-8" id="username" placeholder="rechercher une commande" required>
+
+        <form method="get" action="./orders.html"class="grid-c-2 items-center gap-1 fmld-width-100- fmld-mrg fmld-pdg-8">
+            <input type="search" name="search" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8" id="search" placeholder="rechercher un produit">
             
-            <select class="border-light fmld-width-100- fmld-width-300-l fmld-pdg-8" id="countrycode" required>
-                <option class="fmld-pdg-8" for="" value="category" selected>Filtrer par date</option>
-                <option class="fmld-pdg-8" for="" value="plus ancien">plus ancien</option>
-                <option class="fmld-pdg-8" for="" value="plus recents">plus recents</option>
-                <option class="fmld-pdg-8" for="" value="cette semaine">cette semaine</option>
-                <option class="fmld-pdg-8" for="" value="ce mois-ci">ce mois-ci</option>
-                <option class="fmld-pdg-8" for="" value="ctte année">ctte année</option>
-            </select>
-            
-            <select class="border-light fmld-width-100- fmld-width-300-l fmld-pdg-8" id="countrycode" required>
-                <option class="fmld-pdg-8" for="" value="category" selected>Filtrer par categorie</option>
-                <option class="fmld-pdg-8" for="" value="bracelets">bracelets</option>
-                <option class="fmld-pdg-8" for="" value="colliers">colliers</option>
-                <option class="fmld-pdg-8" for="" value="foulards">foulards</option>
-                <option class="fmld-pdg-8" for="" value="parrures">parrures</option>
-                <option class="fmld-pdg-8" for="" value="bagues">bagues</option>
-            </select>
-        </div>
+            <span class="">
+                <select name="date" class="border-light fmld-width-100- fmld-width-300-l fmld-pdg-8" id="date">
+                    <option class="fmld-pdg-8" for="" value="category" selected>Filtrer par date</option>
+                    <option class="fmld-pdg-8" for="" value="plus ancien">plus ancien</option>
+                    <option class="fmld-pdg-8" for="" value="plus recents">plus recents</option>
+                    <option class="fmld-pdg-8" for="" value="cette semaine">cette semaine</option>
+                    <option class="fmld-pdg-8" for="" value="ce mois-ci">ce mois-ci</option>
+                    <option class="fmld-pdg-8" for="" value="ctte année">ctte année</option>
+                </select>
+                
+                <select name="category" class="border-light fmld-width-100- fmld-width-300-l fmld-pdg-8" id="category">
+                    <option class="fmld-pdg-8" for="" value="category" selected>Filtrer par categorie</option>
+                    <option class="fmld-pdg-8" for="" value="bracelets">bracelets</option>
+                    <option class="fmld-pdg-8" for="" value="colliers">colliers</option>
+                    <option class="fmld-pdg-8" for="" value="foulards">foulards</option>
+                    <option class="fmld-pdg-8" for="" value="parrures">parrures</option>
+                    <option class="fmld-pdg-8" for="" value="bagues">bagues</option>
+                </select>
+    
+                <button type="button" class="btn fmld-pdg-8 fmld-zoom-out fmld-medium fmld-hide-mobile">
+                    Filtrer
+                </button>
+            </span>
+        </form>
+
         <div class="grid-c-1 gap-1 fmld-pdg-16 fmld-mrg-tb fmld-height-80vh">
             <div class="fmld-pdg-top">
                 <div class="flex items-center justify-between gap-1 ">
