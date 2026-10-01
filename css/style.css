@@ -242,7 +242,8 @@ dd {
 }
 
 input[type="tel"],
-input[type="text"], 
+input[type="text"],
+input[type="search"], 
 input[type="number"], 
 input[type="email"], 
 input[type="password"], 
