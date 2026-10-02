@@ -100,7 +100,7 @@
             <h2 class="fmld-mrg-tb fmld-pdg-16 fmld-xlarge">Gérez vos commandes</h2>
             <!-- filters -->
             <form method="get" action="./orders.html"class="grid-c-2 items-center gap-1 fmld-mrg fmld-pdg-8">
-                <input type="search" name="search" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8" id="search" placeholder="rechercher un produit">
+                <input oninput="filterContent('.product-name','#search')" type="search" name="search" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8" id="search" placeholder="rechercher un produit">
                 
                 <span class="flex items-center- justify-between gap-1">
                     <select name="date" class="border-light fmld-width-300-l fmld-pdg-8" id="date">
@@ -112,11 +112,11 @@
                         <option class="fmld-pdg-8" value="ctte année">ctte année</option>
                     </select>
                     
-                    <select name="status" class="border-light fmld-width-300-l fmld-pdg-8" id="status">
+                    <select name="status" class="border-light fmld-width-300-l fmld-pdg-8" id="status" oninput="filterContent('.product-status','#status')">
                         <option class="fmld-pdg-8" value="" selected>Filtrer par statut</option>
-                        <option class="fmld-pdg-8" value="active">active</option>
-                        <option class="fmld-pdg-8" value="inactive">inactive</option>
-                        <option class="fmld-pdg-8" value="archived">archivé</option>
+                        <option class="fmld-pdg-8" value="expedition">en expedition</option>
+                        <option class="fmld-pdg-8" value="annulé">annulé</option>
+                        <option class="fmld-pdg-8" value="livré">livré</option>
                     </select>
         
                     <button type="button" class="btn fmld-pdg-8 fmld-zoom-out fmld-medium fmld-hide-mobile">
@@ -134,6 +134,7 @@
                     <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Produit</span>
                     <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Prix</span>
                     <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Qté</span>
+                    <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">No Cmde</span>
                     <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Statut</span>
                     <span class="fmld-pdg-bottom fmld-bold fmld-small fmld-upper">Actions</span>
                 </div>
@@ -143,15 +144,17 @@
                             <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
                         </a>
 
-                        <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou g</a>
+                        <a class="product-name fmld-mrg-tb fmld-medium" href="/product/6">bijou g</a>
 
                         <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
                         
                         <span class="fmld-mrg-tb">
                             2
+                        </span><span class="fmld-mrg-tb">
+                           CMD-001
                         </span>
 
-                        <a class="fmld-mrg-tb fmld-medium" href="/product/6">annulé</a>
+                        <a class="product-status fmld-mrg-tb fmld-medium" href="/product/6">annulé</a>
                         
                         <span class="fmld-mrg-tb">
                             <button class="c-btn fmld-pdg-8 fmld-large" title="valider la commande">
@@ -170,15 +173,17 @@
                             <img alt="" src="../images/products/img_0220-1152x1536.jpeg" class="modal-cart-img">
                         </a>
 
-                        <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
+                        <a class="product-name fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
 
                         <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
 
                         <span class="fmld-mrg-tb">
                             2
+                        </span><span class="fmld-mrg-tb">
+                           CMD-002
                         </span>
 
-                        <a class="fmld-mrg-tb fmld-medium" href="/product/6">en expedition</a>
+                        <a class="product-status fmld-mrg-tb fmld-medium" href="/product/6">en expedition</a>
                         
                         <span class="fmld-mrg-tb">
                             <button class="c-btn fmld-pdg-8 fmld-large" title="valider la commande">
@@ -197,12 +202,14 @@
                             <img alt="" src="../images/products/img_0269-1152x1536.jpeg" class="modal-cart-img">
                         </a>
 
-                        <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
+                        <a class="product-name fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
 
                         <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
 
                         <span class="fmld-mrg-tb">
                             2
+                        </span><span class="fmld-mrg-tb">
+                           CMD-001
                         </span>
                         
                         <a class="fmld-mrg-tb fmld-medium" href="/product/6">livré</a>

@@ -106,7 +106,7 @@
             </div>
     
             <form method="get" action="./categories.html"class="grid-c-2 items-center gap-1 fmld-mrg fmld-pdg-8">
-                <input type="search" name="search" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8" id="search" placeholder="rechercher une catégorie">
+                <input oninput="filterContent('.product-name','#search')" type="search" name="search" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8" id="search" placeholder="rechercher une catégorie">
                 
                 <span class="flex items-center- justify-between gap-1">
                     <select name="date" class="border-light fmld-width-300-l fmld-pdg-8" id="date">
@@ -118,11 +118,11 @@
                         <option class="fmld-pdg-8" value="ctte année">ctte année</option>
                     </select>
                     
-                    <select name="status" class="border-light fmld-width-300-l fmld-pdg-8" id="status">
+                    <select name="status" class="border-light fmld-width-300-l fmld-pdg-8" id="status" oninput="filterContent('.product-status','#status')">
                         <option class="fmld-pdg-8" value="" selected>Filtrer par statut</option>
                         <option class="fmld-pdg-8" value="active">active</option>
                         <option class="fmld-pdg-8" value="inactive">inactive</option>
-                        <option class="fmld-pdg-8" value="archived">archivé</option>
+                        <option class="fmld-pdg-8" value="archivé">archivé</option>
                     </select>
         
                     <button type="button" class="btn fmld-pdg-8 fmld-zoom-out fmld-medium fmld-hide-mobile">
@@ -165,7 +165,7 @@
                     </div>
                     <div class="">
                         <div class="flex items-center justify-between gap-1 border-top-light" style="height: 110px;">
-                            <span class="fmld-mrg-tb fmld-medium">Bracelets</span>
+                            <span class="product-name fmld-mrg-tb fmld-medium">Bracelets</span>
 
                             <span class="fmld-mrg-tb fmld-medium">400</span>
 
@@ -175,7 +175,7 @@
                                 2
                             </span>
 
-                            <a class="fmld-mrg-tb fmld-medium" href="/product/6">active</a>
+                            <a class="product-status fmld-mrg-tb fmld-medium" href="/product/6">active</a>
                             
                             <span class="fmld-mrg-tb">
                                 <button class="c-btn fmld-pdg-8 fmld-large" title="modifier le produit">
@@ -190,7 +190,7 @@
                             </span>
                         </div>
                         <div class="flex items-center justify-between gap-1 border-top-light" style="height: 110px;">
-                            <span class="fmld-mrg-tb fmld-medium">Colliers</span>
+                            <span class="product-name fmld-mrg-tb fmld-medium">Colliers</span>
 
                             <span class="fmld-mrg-tb fmld-medium">500</span>
 
@@ -200,7 +200,7 @@
                                 2
                             </span>
 
-                            <a class="fmld-mrg-tb fmld-medium" href="/product/6">inactive</a>
+                            <a class="product-status fmld-mrg-tb fmld-medium" href="/product/6">inactive</a>
                             
                             <span class="fmld-mrg-tb">
                                 <button class="c-btn fmld-pdg-8 fmld-large" title="modifier le produit">
@@ -215,7 +215,7 @@
                             </span>
                         </div>
                         <div class="flex items-center justify-between gap-1 border-top-light" style="height: 110px;">
-                            <span class="fmld-mrg-tb fmld-medium">Foulards</span>
+                            <span class="product-name fmld-mrg-tb fmld-medium">Foulards</span>
 
                             <span class="fmld-mrg-tb fmld-medium">300</span>
 
@@ -240,7 +240,7 @@
                             </span>
                         </div>
                         <div class="flex items-center justify-between gap-1 border-top-light" style="height: 110px;">
-                            <span class="fmld-mrg-tb fmld-medium">Parrures</span>
+                            <span class="product-name fmld-mrg-tb fmld-medium">Parrures</span>
 
                             <span class="fmld-mrg-tb fmld-medium">250</span>
 
@@ -250,7 +250,7 @@
                                 2
                             </span>
 
-                            <a class="fmld-mrg-tb fmld-medium" href="/product/6">active</a>
+                            <a class="product-status fmld-mrg-tb fmld-medium" href="/product/6">active</a>
                             
                             <span class="fmld-mrg-tb">
                                 <button class="c-btn fmld-pdg-8 fmld-large" title="modifier le produit">
@@ -265,7 +265,7 @@
                             </span>
                         </div>
                         <div class="flex items-center justify-between gap-1 border-top-light" style="height: 110px;">
-                            <span class="fmld-mrg-tb fmld-medium">Bagues</span>
+                            <span class="product-name fmld-mrg-tb fmld-medium">Bagues</span>
 
                             <span class="fmld-mrg-tb fmld-medium">240</span>
 
@@ -275,7 +275,7 @@
                                 2
                             </span>
 
-                            <a class="fmld-mrg-tb fmld-medium" href="/product/6">inactive</a>
+                            <a class="product-status fmld-mrg-tb fmld-medium" href="/product/6">inactive</a>
                             
                             <span class="fmld-mrg-tb">
                                 <button class="c-btn fmld-pdg-8 fmld-large" title="modifier le produit">

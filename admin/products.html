@@ -106,7 +106,7 @@
             </div>
         
             <form method="get" action="./products.html"class="grid-c-2 items-center gap-1 fmld-mrg fmld-pdg-8">
-                <input type="search" name="search" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8" id="search" placeholder="rechercher un produit">
+                <input oninput="filterContent('.product-name','#search')" type="search" name="search" class="border-light fmld-width-100 fmld-width-300-l fmld-pdg-8" id="search" placeholder="rechercher un produit">
                 
                 <span class="">
                     <select name="date" class="border-light fmld-width-300-l fmld-pdg-8" id="date">
@@ -118,13 +118,13 @@
                         <option class="fmld-pdg-8" value="ctte année">ctte année</option>
                     </select>
                     
-                    <select name="category" class="border-light fmld-width-300-l fmld-pdg-8" id="category">
+                    <select name="category" class="border-light fmld-width-300-l fmld-pdg-8" id="category" oninput="filterContent('.product-category','#category')">
                         <option class="fmld-pdg-8" value="" selected>Filtrer par categorie</option>
-                        <option class="fmld-pdg-8" value="bracelets">bracelets</option>
-                        <option class="fmld-pdg-8" value="colliers">colliers</option>
-                        <option class="fmld-pdg-8" value="foulards">foulards</option>
-                        <option class="fmld-pdg-8" value="parrures">parrures</option>
-                        <option class="fmld-pdg-8" value="bagues">bagues</option>
+                        <option class="fmld-pdg-8" value="bracelet">bracelets</option>
+                        <option class="fmld-pdg-8" value="collier">colliers</option>
+                        <option class="fmld-pdg-8" value="foulard">foulards</option>
+                        <option class="fmld-pdg-8" value="parrure">parrures</option>
+                        <option class="fmld-pdg-8" value="bague">bagues</option>
                     </select>
         
                     <button type="button" class="btn fmld-pdg-8 fmld-zoom-out fmld-medium fmld-hide-mobile">
@@ -172,9 +172,9 @@
                                 <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
                             </a>
 
-                            <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou g</a>
+                            <a class="product-name fmld-mrg-tb fmld-medium" href="/product/6">bijou g</a>
 
-                            <span class="fmld-medium">
+                            <span class="product-category fmld-medium">
                                 colier
                             </span>
 
@@ -205,9 +205,9 @@
                                 <img alt="" src="../images/products/img_0220-1152x1536.jpeg" class="modal-cart-img">
                             </a>
 
-                            <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
+                            <a class="product-name fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
 
-                            <span class="fmld-medium">
+                            <span class="product-category fmld-medium">
                                 bracelet
                             </span>
 
@@ -238,9 +238,9 @@
                                 <img alt="" src="../images/products/img_0269-1152x1536.jpeg" class="modal-cart-img">
                             </a>
 
-                            <a class="fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
+                            <a class="product-name fmld-mrg-tb fmld-medium" href="/product/6">bijou f</a>
 
-                            <span class="fmld-medium">
+                            <span class="product-category fmld-medium">
                                 boucle d'oreilles
                             </span>
 
