@@ -261,18 +261,77 @@
                 </div>
             </div>
             <div class="modal-parent" id="search-modal">
-                    <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
-                    <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">
-                        <h4 class="flex items-center justify-between gap-1">
-                            <span class="fmld-large fmld-bold">Rechercher quelquechose</span>
-                            <button onclick="viewCart('#search-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
-                        </h4>
-                        <input class="fmld-width-100 fmld-pdg-8 fmld-mrg-right border-gray" type="search" placeholder="Tapez ici pour rechercher" value=""
-                            style="height: 45px;">
-                        <div class="fmld-mrg-16">
-                            <h2 class="fmld-mrg-bottom fmld-pdg-8">Vos resultats de recherches s'afficheront ici!</h2>
+                <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
+                <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">
+                    <h4 class="flex items-center justify-between gap-1 fmld-mrg-16">
+                        <span class="fmld-large fmld-bold">Rechercher quelquechose</span>
+                        <button onclick="viewCart('#search-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                    </h4>
+                    <input id="search" class="fmld-width-90 fmld-pdg-8 fmld-mrg-right fmld-mrg-left border-gray" type="search" placeholder="Tapez ici pour rechercher" oninput="filterContent('.item-name','#search')"
+                        style="height: 45px;">
+                    <div class="fmld-mrg-16">
+                        <div id="item-1" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0218-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="item-name fmld-mrg-tb fmld-medium" href="./product-detail.html">bracelet</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+
+                            <span >
+                                <button type="button" onclick="hideElement('#item-1')" class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div id="item-2" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0412-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="item-name fmld-mrg-tb fmld-medium" href="./product-detail.html">boucle d'oreilles</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-2')" class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div id="item-3" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0360-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="item-name fmld-mrg-tb fmld-medium" href="./product-detail.html">galets</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-3')" class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div id="item-4" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0269-1152x1536.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="item-name fmld-mrg-tb fmld-medium" href="./product-detail.html">boucle d'oreilles</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-3')" class="c-btn fmld-large">×</button>
+                            </span>
+                        </div>
+                        <div id="item-5" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
+                            <a href="./product-detail.html">
+                                <img alt="" src="../images/products/img_0561.jpeg" class="modal-cart-img">
+                            </a>
+                            <a class="item-name fmld-mrg-tb fmld-medium" href="./product-detail.html">collier</a>
+    
+                            <span class="fmld-mrg-tb fmld-medium">5500 FCFA</span>
+                            
+                            <span >
+                                <button type="button" onclick="hideElement('#item-3')" class="c-btn fmld-large">×</button>
+                            </span>
                         </div>
                     </div>
+                </div>
             </div>
         </aside>
     </main>
