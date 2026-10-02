@@ -15,6 +15,10 @@ function showElement(target) {
     document.querySelector(target).style.display = "";
 }
 
+function removeElement(target) {
+    document.querySelector(target).remove();
+}
+
 function decreaseValue (element) {
     document.querySelector(element).stepDown();
 }
