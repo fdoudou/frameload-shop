@@ -40,3 +40,16 @@ function verifyForm() {
         }
     }
 }
+
+function filterContent(container,filter) {
+    const keyword = document.querySelector(filter).value;
+    const list = document.querySelectorAll(container);
+    
+    for (let c = 0; c < list.length; c++) {
+        if (list[c].innerText.toLowerCase().includes(keyword.toLowerCase())) {
+            list[c].closest("div").style.display = "";
+        } else {
+            list[c].closest("div").style.display = "none";
+        }
+    }
+}
