@@ -57,13 +57,14 @@ function filterContent(container,filter) {
 function slideImage(pos) {
     const scrollWidth = 300;
     const slideElement = document.querySelector('#slide-container');
-        slideElement.scroll({
-            top: 0,
-            left: pos*scrollWidth,
-            behavior: "smooth"
-        }
-    );
     const thumbnails = document.querySelectorAll('.img-thumbnail');
+
+    slideElement.scroll({
+        top: 0,
+        left: pos*scrollWidth,
+        behavior: "smooth"
+    });
+    
     for (let c = 0; c < thumbnails.length; c++) {
         thumbnails[c].style.border = "0px"
     }
