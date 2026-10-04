@@ -480,7 +480,7 @@ button,
     color: var(--black) !important;
 }
 
-.c-btn {
+.transparent-btn {
     background: transparent;
     color: var(--black) !important;
 }
