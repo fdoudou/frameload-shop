@@ -53,3 +53,14 @@ function filterContent(container,filter) {
         }
     }
 }
+
+function slideImage(pos) {
+    const scrollWidth = 300;
+    const slideElement = document.querySelector('#slide-container');
+        slideElement.scroll({
+            top: 0,
+            left: pos*scrollWidth,
+            behavior: "smooth"
+        }
+    );
+}
