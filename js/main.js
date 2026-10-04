@@ -63,4 +63,9 @@ function slideImage(pos) {
             behavior: "smooth"
         }
     );
+    const thumbnails = document.querySelectorAll('.img-thumbnail');
+    for (let c = 0; c < thumbnails.length; c++) {
+        thumbnails[c].style.border = "0px"
+    }
+    thumbnails[pos].style.border = "3px solid var(--primary)"
 }
