@@ -19,11 +19,11 @@ function removeElement(target) {
     document.querySelector(target).remove();
 }
 
-function indrement (element) {
+function decreaseValue(element) {
     document.querySelector(element).stepDown();
 }
 
-function decrement (element) {
+function increaseValue(element) {
     document.querySelector(element).stepUp();
 }
 
