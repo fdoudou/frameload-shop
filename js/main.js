@@ -19,11 +19,11 @@ function removeElement(target) {
     document.querySelector(target).remove();
 }
 
-function decreaseValue (element) {
+function indrement (element) {
     document.querySelector(element).stepDown();
 }
 
-function increaseValue (element) {
+function decrement (element) {
     document.querySelector(element).stepUp();
 }
 
@@ -55,13 +55,12 @@ function filterContent(container,filter) {
 }
 
 function slideImage(pos) {
-    const scrollWidth = 300;
     const slideElement = document.querySelector('#slide-container');
     const thumbnails = document.querySelectorAll('.img-thumbnail');
 
     slideElement.scroll({
         top: 0,
-        left: pos*scrollWidth,
+        left: pos*slideElement.clientWidth,
         behavior: "smooth"
     });
     
