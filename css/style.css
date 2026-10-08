@@ -739,6 +739,10 @@ button,
     .fmld-width-100-l {
         width: 100%;
     }
+    
+    .fmld-width-200-l {
+        width: 200px;
+    }
 
     .fmld-width-300-l {
         width: 300px;
