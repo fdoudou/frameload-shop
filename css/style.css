@@ -453,6 +453,14 @@ a {
 .fmld-width-100 {
     width: 100%!important;
 }
+    
+.fmld-width-200 {
+    width: 200px;
+}
+
+.fmld-width-300 {
+    width: 300px;
+}
 
 .fmld-svg {
     display: inline;
