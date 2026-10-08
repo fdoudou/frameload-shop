@@ -1,5 +1,5 @@
 
-function viewCart (target) {
+function viewModal (target) {
     if (document.querySelector(target).className === 'modal-parent') {
         document.querySelector(target).className = 'fmld-show';
     }   else {

@@ -38,7 +38,7 @@
             </span>
         </div>
         
-        <button onclick="viewCart('#nav-modal')" class="btn fmld-pdg-8 transparent-btn fmld-zoom-out fmld-hide-nomobile" aria-label="button menu"
+        <button onclick="viewModal('#nav-modal')" class="btn fmld-pdg-8 transparent-btn fmld-zoom-out fmld-hide-nomobile" aria-label="button menu"
             style="position: absolute; top: 8px; display: inline-block;">
             <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -56,14 +56,14 @@
         </span>
         
         <div class="" style="position: absolute; right: 0px; top: 8px; display: inline-block; width: 100px;">
-            <button onclick="viewCart('#search-modal')" class="fmld-pdg-8 btn transparent-btn btn fmld-zoom-out" aria-label="button recherche">
+            <button onclick="viewModal('#search-modal')" class="fmld-pdg-8 btn transparent-btn btn fmld-zoom-out" aria-label="button recherche">
                 <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
             </button>
-            <button onclick="viewCart('#cart-modal')" class="fmld-pdg-8 btn transparent-btn fmld-zoom-out" aria-label="button panier">
+            <button onclick="viewModal('#cart-modal')" class="fmld-pdg-8 btn transparent-btn fmld-zoom-out" aria-label="button panier">
                 <svg class="fmld-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="10" cy="20.5" r="1"></circle>
@@ -77,7 +77,7 @@
     </header>
     <!-- nav panel -->
     <nav class="modal-parent" id="nav-modal">
-        <div onclick="viewCart('#nav-modal')" class="modal-underlay"></div>
+        <div onclick="viewModal('#nav-modal')" class="modal-underlay"></div>
         <!-- navigation -->
         <div class="fmld-modal overlay-content fmld-anim-left" style="right: auto; left: 0%;">
             <div class="flex col wrap fmld-pdg-top fmld-mrg-top">
@@ -88,7 +88,7 @@
                 <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
             </div>
 
-            <button onclick="viewCart('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right"
+            <button onclick="viewModal('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right"
                 style="position: absolute; top: 16px; right: 16px;">×</button>
         </div>
     </nav>
@@ -201,7 +201,7 @@
                     </dl>
                     
                     <div class="fmld-w-100 fmld-pdg-top fmld-pdg-bottom fmld-mrg-top">
-                        <button onclick="verifyForm()" class="fmld-width-100 fmld-medium fmld-bold btn fav-btn fmld-pdg-16 fmld-zoom-out"
+                        <button onclick="verifyForm()" class="fmld-width-100 fmld-medium fmld-bold btn fmld-pdg-16 fmld-zoom-out"
                             type="submit">
                             Commander maintenant
                         </button>
@@ -234,22 +234,22 @@
                 <dt class="fmld-bold">Statut: </dt>
                 <dd class="fmld-medium fmld-pdg">En attente</dd>
             </dl>
-            <button onclick="showElement('#checkout-form');hideElement('#confirm-modal')" class="fmld-medium fmld-bold btn fav-btn fmld-pdg-16 fmld-zoom-out" type="reset" form="form">
-                Réinitialiser
+            <button onclick="showElement('#checkout-form');hideElement('#confirm-modal')" class="fmld-medium btn fmld-pdg-8 fmld-zoom-out" type="reset" form="form">
+                Retour
             </button>
         </section>
         
         <!-- modals -->
         <aside>
             <div class="modal-parent" id="cart-modal">
-                <div onclick="viewCart('#cart-modal')" class="modal-underlay"></div>
+                <div onclick="viewModal('#cart-modal')" class="modal-underlay"></div>
                 <div class="fmld-modal fmld-anim-right">
                     <h4 class="flex items-center justify-between gap-1 fmld-pdg-8">
                         <span class="fmld-large fmld-bold">
                             Mon panier
                             <span class="accent text-white" style="border-radius: 20px; padding: 3px 5px; margin: 4px; font-size: 10px;">3</span>
                         </span>
-                        <button onclick="viewCart('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                        <button onclick="viewModal('#cart-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
                     </h4>
                     <div class="fmld-pdg-8" style="overflow-y: scroll;">
                         <div id="item-1" class="flex items-center justify-between gap-1 border-top-light" style="height: 125px;">
@@ -300,11 +300,11 @@
                 </div>
             </div>
             <div class="modal-parent" id="search-modal">
-                <div onclick="viewCart('#search-modal')" class="modal-underlay"></div>
+                <div onclick="viewModal('#search-modal')" class="modal-underlay"></div>
                 <div class="fmld-modal fmld-anim-left" style="right: auto; left: 0%;">
                     <h4 class="flex items-center justify-between gap-1 fmld-mrg-16">
                         <span class="fmld-large fmld-bold">Rechercher quelquechose</span>
-                        <button onclick="viewCart('#search-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
+                        <button onclick="viewModal('#search-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right">×</button>
                     </h4>
                     <input id="search" class="fmld-width-90 fmld-pdg-8 fmld-mrg-right fmld-mrg-left border-gray" type="search" placeholder="Tapez ici pour rechercher" oninput="filterContent('.item-name','#search')"
                         style="height: 45px;">
