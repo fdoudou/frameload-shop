@@ -117,7 +117,6 @@ dd {
     border: 2px solid var(--gray-light);
 }
 
-
 .border-wave-light {
     border: 2px dashed var(--gray-light);
     text-decoration: 3px dashed var(--gray-light);
@@ -552,7 +551,7 @@ button,
     height: 30px; top: 35%;position: absolute; text-shadow: black 10px 0px 20px; color: white; font-size: 30px; text-overflow: ellipsis;
 }
 
-.img-thumbnail {
+.thumbnail {
     width: 100px;
     height: 100px;
     flex-shrink: 0;
@@ -561,7 +560,7 @@ button,
     background: var(--white);
 }
 
-.img-thumbnail>img {
+.thumbnail>img {
     object-fit: contain;
     width: 100%;
     height: 100%;
@@ -596,7 +595,7 @@ button,
     -webkit-overflow-scrolling: touch;
 }
 
-.img-thumbnail, .modal-cart-img{
+.thumbnail, .modal-cart-img{
     width: 95px; height: 95px; object-fit: cover;border-radius: 6px !important;
 }
 

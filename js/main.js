@@ -56,7 +56,7 @@ function filterContent(container,filter) {
 
 function slideImage(pos) {
     const slideElement = document.querySelector('#slide-container');
-    const thumbnails = document.querySelectorAll('.img-thumbnail');
+    const thumbnails = document.querySelectorAll('.thumbnail');
 
     slideElement.scroll({
         top: 0,
