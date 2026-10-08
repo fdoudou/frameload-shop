@@ -211,7 +211,7 @@
         </section>
         
         <section id="confirm-modal" class="grid-c-1 items-center grid-center fmld-mrg-tb fmld-pdg-16" style="display: none;height:max-content">
-            <span onclick="showElement('#checkout-form');hideElement('#confirm-modal')" class="fmld-round fmld-" style="width: 100px;height: 100px;background:#e7fed7;position: relative; ">
+            <span class="fmld-round" style="width: 100px;height: 100px;background:#e7fed7;position: relative; ">
                 <svg style="color:#2fcc42;position:absolute;top:30px;right:30px" xmlns="http://www.w3.org/2000/svg" width="40" height="40" xml:space="preserve" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                 </svg>
@@ -234,6 +234,9 @@
                 <dt class="fmld-bold">Statut: </dt>
                 <dd class="fmld-medium fmld-pdg">En attente</dd>
             </dl>
+            <button onclick="showElement('#checkout-form');hideElement('#confirm-modal')" class="fmld-medium fmld-bold btn fav-btn fmld-pdg-16 fmld-zoom-out" type="reset" form="form">
+                Réinitialiser
+            </button>
         </section>
         
         <!-- modals -->
