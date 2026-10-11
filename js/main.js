@@ -7,6 +7,14 @@ function viewModal (target) {
     }
 }
 
+function hideModal(id) {
+    document.getElementById(id).close();
+}
+
+function showModal(id) {
+    document.getElementById(id).showModal();
+}
+
 function hideElement(target) {
     document.querySelector(target).style.display = "none";
 }

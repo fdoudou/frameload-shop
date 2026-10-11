@@ -88,15 +88,24 @@
                 <a class="fmld-pdg-16 nav-btn-mobile fmld-xlarge" href="./cart.html">Panier</a>
             </div>
 
-            <button onclick="viewModal('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right"
-                style="position: absolute; top: 16px; right: 16px;">×</button>
+            <button onclick="viewModal('#nav-modal')" class="fmld-xlarge fmld-bold fmld-pdg-left fmld-pdg-right" style="position: absolute; top: 16px; right: 16px;">×</button>
         </div>
     </nav>
 
+
     <main id="root" class=" fmld-height-80vh">
+        
+        <dialog id="confirm-modal" style="border:0px">
+            <div class="flex col items-center justify-center fmld-pdg-16 fmld-mrg-16">
+                <h4 class="fmld-large fmld-bold fmld-mrg-bottom">Finaliser ma commande</h4>
+                <p class="fmld-medium fmld-mrg-bottom">Confirmez-vous votre commande?</p>
+                <button onclick="hideModal('confirm-modal');showElement('#success-message');hideElement('#checkout-form')" class="btn fmld-pdg-8 fmld-zoom-out" type="button">Confirmer</button>
+            </div>
+        </dialog>
+
         <section id="checkout-form">
             <h1 class="fmld-mrg-tb fmld-pdg-16 fmld-xxlarge">Finaliser ma commander</h1>
-            <form onsubmit="event.preventDefault();showElement('#confirm-modal');hideElement('#checkout-form')" id="form" action="./checkout.html" method="get" class="grid-c-half gap-2 justify-center fmld-mrg fmld-pdg-bottom">
+            <form onsubmit="event.preventDefault();showModal('confirm-modal')" id="form" action="./checkout.html" method="get" class="grid-c-half gap-2 justify-center fmld-mrg fmld-pdg-bottom">
                 <div class="">
                     <div class="fmld-pdg-bottom fmld-width-100 form-control">
                         <label for="lastname" class="form-label fmld-bold fmld-small fmld-left">Nom</label>
@@ -210,7 +219,7 @@
             </form>
         </section>
         
-        <section id="confirm-modal" class="grid-c-1 items-center grid-center fmld-mrg-tb fmld-pdg-16" style="display: none;height:max-content">
+        <section id="success-message" class="grid-c-1 items-center grid-center fmld-mrg-tb fmld-pdg-16" style="display: none;height:max-content">
             <span class="fmld-round" style="width: 100px;height: 100px;background:#e7fed7;position: relative; ">
                 <svg style="color:#2fcc42;position:absolute;top:30px;right:30px" xmlns="http://www.w3.org/2000/svg" width="40" height="40" xml:space="preserve" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
@@ -234,7 +243,7 @@
                 <dt class="fmld-bold">Statut: </dt>
                 <dd class="fmld-medium fmld-pdg">En attente</dd>
             </dl>
-            <button onclick="showElement('#checkout-form');hideElement('#confirm-modal')" class="flex items-center justify-between gap-1 fmld-medium btn fmld-pdg-8 fmld-zoom-out" type="reset" form="form">
+            <button onclick="showElement('#checkout-form');hideElement('#success-message')" class="flex items-center justify-between gap-1 fmld-medium btn fmld-pdg-8 fmld-zoom-out" type="reset" form="form">
                 <svg width="20" height="20" viewBox="0 0 448 512">
                     <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
                 </svg> Retour
@@ -375,6 +384,8 @@
                 </div>
             </div>
         </aside>
+
+
     </main>
     <!-- footer -->
     <footer class="fmld-pdg-16" style="background: var(--secondary); position: relative; bottom: 0px;">
